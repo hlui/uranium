@@ -1,0 +1,64 @@
+div[data-ur-carousel-component='view_container'] {
+  height: 270px;
+  width: 100%;
+  overflow-x: hidden;
+  border: 1px solid black;
+  background-color: #99cc00; }
+div[data-ur-carousel-component="scroll_container"] {
+  display: block; }
+  div[data-ur-carousel-component="scroll_container"] > * {
+    display: inline-block;
+    float: left; }
+div[data-ur-carousel-component="button"] {
+  display: inline-block; }
+  div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
+    opacity: 0.3; }
+
+#giant {
+  height: 1000px;
+  background-color: #ff6600;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px; }
+
+div[name='Three'] img {
+  width: 62px !important;
+  height: 62px; }
+
+.test, .description {
+  border: 1px solid #555555;
+  margin: 20px;
+  padding: 0px 10px 10px; }
+
+.code {
+  border: 1px solid gray;
+  border-width: 1px 1px 4px 6px;
+  padding: 10px;
+  background: #e8e8e8;
+  color: black;
+  margin-left: 10px;
+  font-family: courier;
+  text-align: left; }
+
+body {
+  font-family: sans-serif; }
+
+li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {
+  background-color: #a3e2f5; }
+li[data-ur-set="toggler"] [data-ur-toggler-component='content'] {
+  display: none;
+  background-color: #d0e9f0; }
+  li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] {
+    display: block; }
+
+body#tutorial_page *[data-ur-tabs-component='content'] {
+  display: none; }
+  body#tutorial_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
+    display: block; }
+body#tutorial_page #end_product *[data-ur-toggler-component='button'] {
+  background: #a3e2f5; }
+body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
+  display: block;
+  background: #a3e2f5; }
+body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state="disabled"] {
+  display: none; }
