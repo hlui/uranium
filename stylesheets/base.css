@@ -25,6 +25,18 @@ div[name='Three'] img {
   width: 62px !important;
   height: 62px; }
 
+td {
+  text-align: center; }
+
+td.passed {
+  background: #c7e8ad; }
+
+td.failed {
+  background: #e8b5ad; }
+
+td.mixed {
+  background: #fbf6bb; }
+
 div[data-ur-carousel-component='view_container'] {
   height: 270px;
   width: 100%;
