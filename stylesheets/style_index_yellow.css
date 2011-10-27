@@ -103,7 +103,12 @@ body {
 	ol {
 		color: #C0C0C0;
 	}
-	
+	ul {
+		color: #C0C0C0;
+	}
+	li {
+		color: #C0C0C0;
+	}
 	#lightgrey { border-top: 1px solid rgb(70,70,70); border-bottom: 1px solid rgb(30,30,30); width: 100%; float: left; margin: auto; margin-top: 30px; margin-bottom: 30px; }
 	
 	/* Example Styles */
@@ -297,7 +302,14 @@ body {
 
 #selectedlink:visited { color: rgb(50,50,50);}
 
-a:link {color: rgb(50,50,50); text-decoration: none;}      /* unvisited link */
-a:visited {color: rgb(50,50,50); text-decoration: none;}  /* visited link */
-a:hover {color: rgb(50,50,50); text-decoration: underline; }  /* mouse over link */
-a:active {color: rgb(100,100,100); text-decoration: none;}  /* selected link */
+/* In the main body */
+#textbody a:link {color: #FAFAFA; text-decoration: none;}      /* unvisited link */
+#textbody a:visited {color: #FAFAFA; text-decoration: none;}  /* visited link */
+#textbody a:hover {color: #FAFAFA; text-decoration: underline; }  /* mouse over link */
+#textbody a:active {color: #FAFAFA; text-decoration: none;}  /* selected link */
+
+/* In the footer */
+#bottombody a:link {color: rgb(50,50,50); text-decoration: none;}      /* unvisited link */
+#bottombody a:visited {color: rgb(50,50,50); text-decoration: none;}  /* visited link */
+#bottombody a:hover {color: rgb(50,50,50); text-decoration: underline; }  /* mouse over link */
+#bottombody a:active {color: rgb(100,100,100); text-decoration: none;}  /* selected link */
