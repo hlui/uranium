@@ -128,9 +128,17 @@ body {
 			-moz-border-radius: 10px;
 			border-radius: 10px;
 		}
-		.code {
+		.mainpage_code {
 			width: 410px; height: 170px;
 			float: right; padding: 10px;
+			background-color: rgb(40,40,40);
+			border: 3px dashed rgb(60,60,60);
+			color: #C0C0C0; font-family: Courier New; font-size: 14px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+		.code {
 			background-color: rgb(40,40,40);
 			border: 3px dashed rgb(60,60,60);
 			color: #C0C0C0; font-family: Courier New; font-size: 14px;
