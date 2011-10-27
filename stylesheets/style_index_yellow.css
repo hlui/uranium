@@ -31,10 +31,10 @@ body {
 		background: rgb(55,55,55);
 	}
 		#selected {			
-			background: #FFD700 url('../../images/largeshade.png') no-repeat left top;
+			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
 		#selected:hover {
-			background: #FFD700 url('../../images/largeshade.png') no-repeat left top;
+			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
 
 /* Top Header */
@@ -46,7 +46,7 @@ body {
 }
 	#uraniumlogo {
 		width: 500px; height: 200px;
-		background:url('../../images/uraniumlogo.png') no-repeat 50% 50%;
+		background:url('resources/uraniumlogo.png') no-repeat 50% 50%;
 		float: left;
 	}
 	#rightinfo {
@@ -63,7 +63,7 @@ body {
 		}
 	#rightshadow {
 		width: 40px; height: 200px;
-		background: url('../../images/rightshadow.png') repeat-y left top;
+		background: url('resources/rightshadow.png') repeat-y left top;
 		float: right;
 	}
 
@@ -152,7 +152,7 @@ body {
 				/* Example styles. Non-functioning */
 				#extoggler {
 					width: 200px; height: 90px;
-					background: rgb(250,250,250) url('../../images/largeshade.png') no-repeat left bottom;
+					background: rgb(250,250,250) url('resources/largeshade.png') no-repeat left bottom;
 					padding: 6px; padding-left: 10px; padding-right: 10px; margin: auto; margin-top: 30px;
 					-webkit-border-radius: 5px;
 					-moz-border-radius: 5px;
@@ -166,7 +166,7 @@ body {
 						width: 190px; height: 30px;
 						margin: auto; margin-top: 15px;  padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('../../images/largeshade.png') no-repeat left bottom;
+						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;						
@@ -183,7 +183,7 @@ body {
 					}
 				#excarousel {
 					width: 230px; height: 120px;
-					background: rgb(250,250,250) url('../../images/largeshade.png') no-repeat left bottom;
+					background: rgb(250,250,250) url('resources/largeshade.png') no-repeat left bottom;
 					padding: 6px; padding-left: 10px; padding-right: 10px; margin: auto; margin-top: 30px;
 					-webkit-border-radius: 5px;
 					-moz-border-radius: 5px;
@@ -194,7 +194,7 @@ body {
 						float: left;
 						margin: auto; margin-top: 15px;  padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('../../images/largeshade.png') no-repeat left bottom;
+						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;						
@@ -204,7 +204,7 @@ body {
 						float: right;
 						margin: auto; margin-top: 15px;  padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('../../images/largeshade.png') no-repeat left bottom;
+						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;						
@@ -216,7 +216,7 @@ body {
 					#eximage {
 						width: 70px; height: 70px;
 						margin: auto;
-						background: url('../../images/photo1.png') no-repeat center center;
+						background: url('resources/photo1.png') no-repeat center center;
 					}
 					#exbottomtext {
 						margin: auto; margin-top: 5px;
@@ -236,7 +236,7 @@ body {
           
           #exselectlist {
   					width: 230px; height: 150px;
-  					background: rgb(250,250,250) url('../../images/largeshade.png') no-repeat left bottom;
+  					background: rgb(250,250,250) url('resources/largeshade.png') no-repeat left bottom;
   					padding: 6px; padding-left: 10px; padding-right: 10px; margin: auto; margin-top: 30px;
   					-webkit-border-radius: 5px;
   					-moz-border-radius: 5px;
@@ -247,7 +247,7 @@ body {
   				  color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center; }
   				
           *[data-ur-select-list-component="content"] [data-ur-state="enabled"] {
-            background: #FFD700 url('../../images/largeshade.png') no-repeat left bottom;}
+            background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;}
             
           .example#select_list {
             height: 200px;
@@ -276,7 +276,7 @@ body {
 /* Footer */
 #bottombody {
 	width: 100%; margin: 0 auto; border-top: 1px solid #000000;
-	background: url('../../images/topshadow.png') repeat-x left top;
+	background: url('resources/topshadow.png') repeat-x left top;
 }		
 #bottomwrap {	
 	margin-top: 10px; margin-bottom: 20px;
@@ -285,7 +285,7 @@ body {
 	#moovweblogo {
 		width: 300px; height: 100px;
 		margin: auto; margin-bottom: 10px;
-		background: url('../../images/moovweblogo1.png') no-repeat center center;
+		background: url('resources/moovweblogo1.png') no-repeat center center;
 	}
 
 /* Link Styles */
