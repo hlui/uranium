@@ -4,40 +4,41 @@ title: Zoom Preview Examples
 name: zoom_preview_examples
 ---
 <h1> Zoom Preview Examples </h1>
+<div class="wrapper">
+  <div class='test' name='Thumbnails'>
 
-<div class='test' name='Thumbnails'>
+    <h3> Touch and Drag on the thumbnail to view the zoom preview </h3>
 
-  <h3> Touch and Drag on the thumbnail to view the zoom preview </h3>
+    <div data-ur-set='zoom-preview'>
 
-  <div data-ur-set='zoom-preview'>
+      <div data-ur-zoom-preview-component="container">
+        <img data-ur-zoom-preview-component="zoom_image" data-ur-src-modifier-match='(some_attr=)(.*)' data-ur-src-modifier-replace='$1yesway' style="visibility: hidden" />
 
-    <div data-ur-zoom-preview-component="container">
-      <img data-ur-zoom-preview-component="zoom_image" data-ur-src-modifier-match='(some_attr=)(.*)' data-ur-src-modifier-replace='$1yesway' style="visibility: hidden" />
+      <div class="normal_image">
+        <img id="big_image" data-ur-zoom-preview-component='normal_image'
+        data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="images/pic1.jpeg" />
+      </div>
 
-    <div class="normal_image">
-      <img id="big_image" data-ur-zoom-preview-component='normal_image'
-      data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="images/pic1.jpeg" />
+      <img data-ur-zoom-preview-component="button"/>
+
+      </div>
+
+      <ul data-ur-zoom-preview-component="thumbnails">
+        <li> <img width='30px' height='30px' src='images/pic1.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='images/pic2.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='images/pic3.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='images/pic4.jpeg?some_attr=noway'/> </li>
+      </ul>
+
     </div>
-
-    <img data-ur-zoom-preview-component="button"/>
-
-    </div>
-
-    <ul data-ur-zoom-preview-component="thumbnails">
-      <li> <img width='30px' height='30px' src='images/pic1.jpeg?some_attr=noway'/> </li>
-      <li> <img width='30px' height='30px' src='images/pic2.jpeg?some_attr=noway'/> </li>
-      <li> <img width='30px' height='30px' src='images/pic3.jpeg?some_attr=noway'/> </li>
-      <li> <img width='30px' height='30px' src='images/pic4.jpeg?some_attr=noway'/> </li>
-    </ul>
-
   </div>
+  <script type='text/javascript'>
+    var big_image = document.getElementById("big_image");
+    x$().iterate(
+      document.querySelectorAll("[data-ur-zoom-preview-component='thumbnails'] img"),
+      function(elem) {
+        elem.addEventListener('click', function(evt){big_image.src=evt.target.src;}, false);
+      }
+    );
+  </script>
 </div>
-<script type='text/javascript'>
-  var big_image = document.getElementById("big_image");
-  x$().iterate(
-    document.querySelectorAll("[data-ur-zoom-preview-component='thumbnails'] img"),
-    function(elem) {
-      elem.addEventListener('click', function(evt){big_image.src=evt.target.src;}, false);
-    }
-  );
-</script>
