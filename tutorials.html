@@ -132,9 +132,11 @@ name: tutorial
     </p>
     <p>
       (This is actually what we call "lazy" CSS styling. What we're doing is only defining what
-      happens when the data-ur-state is enabled - we don't say anything about its "disabled" state.)
+      happens when the data-ur-state is enabled - we don't say anything about its "disabled" state.
+      Check out more about lazy vs proper styling <a href="styling.html">here</a>.)
     </p>
-    <p>The widgets within Uranium are pretty much only limited by your CSS imagination.
+    <p>
+      The widgets within Uranium are pretty much only limited by your CSS imagination.
     </p>
   </div>
 </div>
@@ -144,34 +146,3 @@ name: tutorial
     TUTORIAL HERE
   </div>
 </div>
-<h2> Example with IDs</h2>
-<p class="code">
- &lt;div data-ur-toggler-component='button' data-ur-id='MyFlatAccordionSocks'><br/>
- &emsp;&emsp;Socks<br/>
- &lt;/div><br/>
-
- &lt;ul data-ur-toggler-component='content' data-ur-id='MyFlatAccordionSocks'><br/>
- &emsp;&emsp;&lt;li> Argyle &lt;/li><br/>
-   &emsp;&emsp;&lt;li> Striped &lt;/li><br/>
-   &emsp;&emsp;&lt;li> Solid &lt;/li><br/>
-   &emsp;&emsp;&lt;li> Dr. Seuss &lt;/li><br/>
- &lt;/ul>
-</p>
-<p class="code">
-  div[name='Dialog'] *[data-ur-toggler-component='content'] {<br/>
-  &emsp;&emsp;display: none;<br/>
-    &emsp;&emsp;position: absolute;<br/>
-    &emsp;&emsp;border-radius: 5px;<br/>
-    &emsp;&emsp;background-color: #AAAAAA;<br/>
-    &emsp;&emsp;width: 500px;<br/>
-    &emsp;&emsp;height: 500px;<br/>
-    &emsp;&emsp;left: 200px;<br/>
-    &emsp;&emsp;bottom: 50px;<br/>
-    &emsp;&emsp;text-align: center;<br/>
-    &emsp;&emsp;padding-top: 30px;<br/>
-  }<br/>
-
-  div[name='Dialog'] *[data-ur-toggler-component='content'][data-ur-state='enabled'] {<br/>
-    &emsp;&emsp;display: block;<br/>
-  }
-</p>
