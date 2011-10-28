@@ -25,15 +25,14 @@ body {
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-			
 	}
 	.menuselect:hover {
 		background: rgb(55,55,55);
 	}
-		#selected {			
+		.toplinks.selected  div {			
 			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
-		#selected:hover {
+		.toplinks.selected:hover div {
 			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
 
@@ -308,7 +307,7 @@ body {
 .toplinks:hover {color: #FFFFFF; text-decoration: none; }
 .toplinks:visited {color: #FFFAFA; text-decoration: none;}
 
-#selectedlink:visited { color: rgb(50,50,50);}
+.toplinks.selected:visited { color: rgb(50,50,50);}
 
 /* In the main body */
 #textbody a:link {color: #FAFAFA; text-decoration: none;}      /* unvisited link */
