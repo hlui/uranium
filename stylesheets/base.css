@@ -624,10 +624,10 @@ body#tutorial_page *[data-ur-tabs-component='content'] {
   body#tutorial_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
     display: block; }
 body#tutorial_page #end_product *[data-ur-toggler-component='button'] {
-  background: #a3e2f5; }
+  background: #ffd700; }
 body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
   display: block;
-  background: #a3e2f5; }
+  background: #ffd700; }
 body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state="disabled"] {
   display: none; }
 
