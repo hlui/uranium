@@ -15,7 +15,7 @@
 			<a href="widget_list.html" class="toplinks"><div class="menuselect">Widgets</div></a><!-- menuselect-->
 			<a href="tutorials.html" class="toplinks"><div class="menuselect">Tutorials</div></a><!-- menuselect-->
 			<a href="example_list.html" class="toplinks"><div class="menuselect">Examples</div></a><!-- menuselect-->
-			<a href="" class="toplinks"><div class="menuselect">Who</div></a><!-- menuselect-->
+			<a href="who.html" class="toplinks"><div class="menuselect">Who</div></a><!-- menuselect-->
 		</div><!-- menuwrap-->	
 	</div><!-- menu-->	
 		<div class="wrapper">
@@ -26,9 +26,9 @@
 	<div id="textbody">
 		<div class="wrapper">
 		<div id="centertext">
-			<h1>"It's Industrial-Grade Rocket Fuel for Your HTML5 Spaceship."</h1>
+			<h1>"It's the best thing I've used since the Civil War!"</h1>
 				<div id="lefttext">
-					<h2>-Hampton Catlin</h2>
+					<h2>-Abraham Lincoln</h2>
 				</div><!-- lefttext end-->
 		</div><!-- centertext end-->
 		<br>
@@ -68,13 +68,14 @@
 		<!-- PLACE EXAMPLE CODE BETWEEN HERE-->
 						<!-- fakecode-->
 						<span id="brown">&lt;div data-ur-set="toggler"&gt;</span><br>
-							<span id="green">&nbsp;&nbsp; &lt;p&gt;Toggler&lt;/p&gt;</span><br>
-								<span id="brown">&nbsp;&nbsp; &lt;div data-ur-toggler-component="button"&gt;</span>
-								<span id="green">&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Click on the button&lt;/p&gt;</span><br>
-								<span id="brown">&nbsp;&nbsp; &lt;/div&gt;</span><br>
-							<span id="brown">&nbsp;&nbsp; &lt;div data-ur-toggler-component="content"&gt;</span><br>
-							<span id="green">&nbsp;&nbsp; &nbsp;&nbsp; &lt;p&gt;and the content appears&lt;/p&gt;</span><br>
-							<span id="brown">&nbsp;&nbsp; &lt;/div&gt;<br>&lt;/div&gt;</span>				
+							<span id="green">&emsp;&emsp;&lt;p&gt;Toggler&lt;/p&gt;</span><br>
+								<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component="button"&gt;</span><br>
+								<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Click on the button&lt;/p&gt;</span><br>
+								<span id="green">&emsp;&emsp;&lt;/div&gt;</span><br>
+							<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component="content"&gt;</span><br>
+							<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;and the content appears&lt;/p&gt;</span><br>
+							<span id="green">&emsp;&emsp;&lt;/div&gt;<br>
+						<span id="brown">&lt;/div&gt;</span>				
 						<!-- fakecode-->
 		<!-- AND HERE-->
 					</div><!-- code end-->
@@ -153,18 +154,18 @@
 				<div id="exselectlist" data-ur-set="select-list">
 				  <div id="extitle">Select List</div>
 				  <select data-ur-select-list-component='select'>
-            <option selected='true' value='A'> A </option>
-            <option value='SKU-B'> B </option>
-            <option value='SKU-C'> C </option>
-            <option value='SKU-D'> D </option>
+            <option selected='true' value='SKU-A'> Select a </option>
+            <option value='SKU-B'> Value </option>
+            <option value='SKU-C'> From </option>
+            <option value='SKU-D'> This List </option>
           </select>
 
 
           <div data-ur-select-list-component='content'>
-            <div value='SKU-A'> A </div>
-            <div value='SKU-B'> B </div>
-            <div value='SKU-C'> C </div>
-            <div value='SKU-D'> D </div>
+            <div value='SKU-A'> Select a </div>
+            <div value='SKU-B'> Value </div>
+            <div value='SKU-C'> From </div>
+            <div value='SKU-D'> This List </div>
           </div>
         </div>
 <!-- AND HERE-->
@@ -176,18 +177,18 @@
 				<!-- fakecode-->
 				<span id="brown">&lt;div data-ur-set='select-list'><br/>
         <span id="green">&emsp;&emsp;&lt;select data-ur-select-list-component='select'></span><br/>
-          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option selected='true' value='SKU-A'> A &lt;/option></span><br/>
-          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-B'> B &lt;/option></span><br/>
-          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-C'> C &lt;/option></span><br/>
-          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-D'> D &lt;/option></span><br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option selected='true' value='SKU-A'> Select a &lt;/option></span><br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-B'> Value &lt;/option></span><br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-C'> From &lt;/option></span><br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-D'> This List &lt;/option></span><br/>
           <span id="green">&emsp;&emsp;&lt;/select></span><br/>
 
 
         <span id="green">&emsp;&emsp;&lt;ul data-ur-select-list-component='content'></span><br/>
-        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-A'> A &lt;/li></span><br/>
-        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-B'> B &lt;/li></span><br/>
-        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-C'> C &lt;/li></span><br/>
-        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-D'> D &lt;/li></span><br/>
+        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-A'> Select a &lt;/li></span><br/>
+        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-B'> Value &lt;/li></span><br/>
+        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-C'> From &lt;/li></span><br/>
+        <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-D'> This List &lt;/li></span><br/>
         <span id="green">&emsp;&emsp;&lt;ul><br/>
        <span id="brown">&lt;/div>
 				<!-- fakecode-->
