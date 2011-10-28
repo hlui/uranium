@@ -9,24 +9,26 @@ more_selected: selected
     <h2>Sets vs IDs</h2>
 
     <p>In Uranium, we can group widgets in two ways: sets and ids. A set is when the whole 
-      widget is wrapped in a div (or other tag) with the attribute data-ur-set="widget".</p>
+      widget is wrapped in a div (or other tag) with the attribute <span class="inline_code">data-ur-set="widget"</span>.</p>
 
     <p>An id is where every component of the widget is given a unique id attribute. For example,
-      giving the attribute data-ur-toggler-id="unique_id". So, this is an alternative way to
+      giving the attribute <span class="inline_code">data-ur-toggler-id="unique_id"</span>. So, this is an alternative way to
       group a set of divs.</p>
 
-    <p>It's generally a better practice to use data-ur-set. This allows for better, well-structured
+    <p>It's generally a better practice to use <span class="inline_code">data-ur-set</span>. This allows for better, well-structured
       and hierarchical HTML. However, it isn't possible in all cases to add this attribute. It's
-      in these instances we use data-ur-widget-id attributes. </p>
+      in these instances we use <span class="inline_code">data-ur-widget-id</span> attributes. </p>
 
     <h2>How Uranium Works</h2>
 
     <p>Uranium searches through the HTML document for the special attributes
-      we give to tags. Once it sees the data-ur, it looks for groups of components. 
+      we give to tags. Once it sees the <span class="inline_code">data-ur</span>, it looks for groups of components. 
       The set allows it to determine what widget we're defining.</p>
 
     <p>Next, the javascript looks for ids on a component. If it finds an
-      id, it uses this. If it <emph>doesn't</emph>, it uses</p>
+      id, it uses this. If it <emph>doesn't</emph>, it uses the set.</p>
   
     <p>This is explained visually in the flowchart below.</p>
+    
+    <img href="/images/uranium_flowchart.png" />
 </div> <!-- wrapper -->
