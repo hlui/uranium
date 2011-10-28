@@ -138,8 +138,15 @@ body#togglers_examples_page
       li
         color: black
         margin-left: 30px
-      [data-ur-toggler-component="button"]
-        color: red
+      li[data-ur-set="toggler"]
+        border: none
+        background: #FAFAFA
+        [data-ur-toggler-component="button"]
+          background: #FAFAFA
+          padding-top: 0px
+        [data-ur-toggler-component="content"][data-ur-state="enabled"]
+          background: #FAFAFA
+          width: 100px
     &[data-ur-toggler-component='button'][data-ur-state='enabled']
       opacity: 1.0
     &[data-ur-toggler-component='content'][data-ur-state='enabled']
