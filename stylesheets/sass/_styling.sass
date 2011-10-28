@@ -1,12 +1,10 @@
 body#styling_page  
-  // Popup examples
-
   // Lazy styling
 
   *
     &[data-ur-toggler-component='button'][data-ur-id='LazyPopup']
       border-radius: 5px
-      background: #FF7171
+      background: #FFD700
       opacity: 0.5
       padding: 5px
       display: inline
@@ -64,15 +62,19 @@ body#styling_page
       padding: 5px
       display: inline
       margin: 0px 5px
+  
+  *[data-ur-id="ProperPopup"]
+    background: #323232
+    border: none
 
   *[data-ur-id='ProperPopup'] *
     &[data-ur-toggler-component='button']
       background: #64953D
       &[data-ur-state='disabled']
-        background: #FF7171
+        background: #FFD700
         opacity: 0.5
       &[data-ur-state='enabled']
-        background: #FF7171
+        background: #FFD700
         opacity: 1.0
     &[data-ur-toggler-component='content']
       &[data-ur-state='disabled']

@@ -271,7 +271,7 @@ body#select_lists_examples_page *[data-ur-id="MyUIDSelectList"] {
 
 body#styling_page *[data-ur-toggler-component='button'][data-ur-id='LazyPopup'] {
   border-radius: 5px;
-  background: #ff7171;
+  background: #ffd700;
   opacity: 0.5;
   padding: 5px;
   display: inline;
@@ -313,13 +313,16 @@ body#styling_page .popup_button {
     padding: 5px;
     display: inline;
     margin: 0px 5px; }
+body#styling_page *[data-ur-id="ProperPopup"] {
+  background: #323232;
+  border: none; }
 body#styling_page *[data-ur-id='ProperPopup'] *[data-ur-toggler-component='button'] {
   background: #64953d; }
   body#styling_page *[data-ur-id='ProperPopup'] *[data-ur-toggler-component='button'][data-ur-state='disabled'] {
-    background: #ff7171;
+    background: #ffd700;
     opacity: 0.5; }
   body#styling_page *[data-ur-id='ProperPopup'] *[data-ur-toggler-component='button'][data-ur-state='enabled'] {
-    background: #ff7171;
+    background: #ffd700;
     opacity: 1; }
 body#styling_page *[data-ur-id='ProperPopup'] *[data-ur-toggler-component='content'][data-ur-state='disabled'] {
   display: none;
@@ -330,7 +333,7 @@ body#styling_page *[data-ur-id='ProperPopup'] *[data-ur-toggler-component='conte
 
 body#tabs_page *[data-ur-tabs-component='button'] {
   opacity: 0.5;
-  background-color: #6495ed;
+  background-color: silver;
   border: 1px solid black;
   border-top-left-radius: 5px 5px;
   border-top-right-radius: 5px 5px;
@@ -341,21 +344,22 @@ body#tabs_page *[data-ur-tabs-component='button'] {
   position: relative; }
 body#tabs_page *[data-ur-tabs-component='content'] {
   display: none;
-  background-color: #6495ed; }
+  background-color: silver; }
 body#tabs_page *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
   opacity: 1;
-  border-bottom: 1px solid #6495ed; }
+  border-bottom: 1px solid silver; }
 body#tabs_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
   display: block;
-  background-color: #6495ed;
+  background-color: silver;
   border: 1px solid black;
   padding: 20px; }
 body#tabs_page *[data-ur-set="tabs"][data-ur-tab-id="html"] {
   text-align: left; }
 body#tabs_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="button"] {
-  background: #a3e2f5; }
+  background: #ffd700;
+  border-bottom: 1px solid #ffd700; }
 body#tabs_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="content"] {
-  background: #d0e9f0; }
+  background: #ffd700; }
 body#tabs_page div[name='accordions'] *[data-ur-tabs-component='button'] {
   display: block;
   border: 1px solid blue;
@@ -366,7 +370,7 @@ body#tabs_page div[name='accordions'] *[data-ur-tabs-component='content'] {
 
 body#tabs_examples_page *[data-ur-tabs-component='button'] {
   opacity: 0.5;
-  background-color: #6495ed;
+  background-color: #ffd700;
   border: 1px solid black;
   border-top-left-radius: 5px 5px;
   border-top-right-radius: 5px 5px;
@@ -377,27 +381,29 @@ body#tabs_examples_page *[data-ur-tabs-component='button'] {
   position: relative; }
 body#tabs_examples_page *[data-ur-tabs-component='content'] {
   display: none;
-  background-color: #6495ed; }
+  background-color: #ffd700;
+  border-radius: 5px; }
 body#tabs_examples_page *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
   opacity: 1;
-  border-bottom: 1px solid #6495ed; }
+  border-bottom: 1px solid #ffd700; }
 body#tabs_examples_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
   display: block;
-  background-color: #6495ed;
+  background-color: #ffd700;
   border: 1px solid black;
   padding: 20px; }
 body#tabs_examples_page *[data-ur-set="tabs"][data-ur-tab-id="html"] {
   text-align: left; }
 body#tabs_examples_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="button"] {
-  background: #a3e2f5; }
+  background: #ffd700; }
 body#tabs_examples_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="content"] {
-  background: #d0e9f0; }
+  background: #ffd700; }
 body#tabs_examples_page div[name='accordions'] *[data-ur-tabs-component='button'] {
   display: block;
-  border: 1px solid blue;
-  background-color: white; }
+  border: 1px solid black;
+  background-color: #ffd700;
+  border-radius: 5px; }
 body#tabs_examples_page div[name='accordions'] *[data-ur-tabs-component='content'] {
-  background-color: white;
+  background-color: #ffd700;
   margin: 0px 20px; }
 
 li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {

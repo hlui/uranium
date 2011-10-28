@@ -4,7 +4,7 @@ body#tabs_page
   *
     &[data-ur-tabs-component='button']
       opacity: 0.5
-      background-color: #6495ED
+      background-color: #C0C0C0
       border: 1px solid black
       border-top-left-radius: 5px 5px
       border-top-right-radius: 5px 5px
@@ -15,13 +15,13 @@ body#tabs_page
       position: relative
     &[data-ur-tabs-component='content']
       display: none
-      background-color: #6495ED
+      background-color: #C0C0C0
     &[data-ur-tabs-component='button'][data-ur-state='enabled']
       opacity: 1.0
-      border-bottom: 1px solid #6495ED
+      border-bottom: 1px solid #C0C0C0
     &[data-ur-tabs-component='content'][data-ur-state='enabled']
       display: block
-      background-color: #6495ED
+      background-color: #C0C0C0
       border: 1px solid black
       padding: 20px
     &[data-ur-set="tabs"][data-ur-tab-id="html"]
@@ -29,9 +29,10 @@ body#tabs_page
 
   #tab_widget *[data-ur-set="tabs"] *
     &[data-ur-tabs-component="button"]
-      background: #A3E2F5
+      background: #FFD700
+      border-bottom: 1px solid #FFD700
     &[data-ur-tabs-component="content"]
-      background: #D0E9F0
+      background: #FFD700
 
   // Accordions w state
 
@@ -50,7 +51,7 @@ body#tabs_examples_page
   *
     &[data-ur-tabs-component='button']
       opacity: 0.5
-      background-color: #6495ED
+      background-color: #FFD700
       border: 1px solid black
       border-top-left-radius: 5px 5px
       border-top-right-radius: 5px 5px
@@ -61,13 +62,14 @@ body#tabs_examples_page
       position: relative
     &[data-ur-tabs-component='content']
       display: none
-      background-color: #6495ED
+      background-color: #FFD700
+      border-radius: 5px
     &[data-ur-tabs-component='button'][data-ur-state='enabled']
       opacity: 1.0
-      border-bottom: 1px solid #6495ED
+      border-bottom: 1px solid #FFD700
     &[data-ur-tabs-component='content'][data-ur-state='enabled']
       display: block
-      background-color: #6495ED
+      background-color: #FFD700
       border: 1px solid black
       padding: 20px
     &[data-ur-set="tabs"][data-ur-tab-id="html"]
@@ -75,18 +77,19 @@ body#tabs_examples_page
 
   #tab_widget *[data-ur-set="tabs"] *
     &[data-ur-tabs-component="button"]
-      background: #A3E2F5
+      background: #FFD700
     &[data-ur-tabs-component="content"]
-      background: #D0E9F0
+      background: #FFD700
 
   // Accordions w state
 
   div[name='accordions'] *
     &[data-ur-tabs-component='button']
       display: block
-      border: 1px solid blue
-      background-color: white
+      border: 1px solid black
+      background-color: #FFD700
+      border-radius: 5px
     &[data-ur-tabs-component='content']
-      background-color: white
+      background-color: #FFD700
       margin: 0px 20px
 
