@@ -110,6 +110,25 @@ body {
 	}
 	#lightgrey { border-top: 1px solid rgb(70,70,70); border-bottom: 1px solid rgb(30,30,30); width: 100%; float: left; margin: auto; margin-top: 30px; margin-bottom: 30px; }
 	
+	#how_to_use {
+	  width: 350px;
+    background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	}
+	#how_to_use p {
+	  color: #323232; font-style: italic; font-family: Rockwell; font-size: 20px;
+	}
+	#how_to_use li {
+	  color: #323232; font-style: italic; font-family: Rockwell; font-size: 20px;
+	}
+	
 	/* Example Styles */
 	.examplewrap {
 		width: 800px; height: 240px;
