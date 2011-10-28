@@ -235,6 +235,28 @@ body.hidden [data-ur-toggler-component='content'][data-ur-state='enabled'] > [da
   position: relative;
   visibility: visible; }
 
+body#hidden_map_page [data-ur-set="toggler"] {
+  background: #323232;
+  border: none; }
+
+body#late_load_map_page span#map_button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
+  color: black;
+  margin: 5px;
+  padding: 5px; }
+body#late_load_map_page *[data-ur-set="map"] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: hidden;
+  margin: 5px;
+  padding: 5px;
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
+  color: black; }
+
 body#font_resizer_page p[data-ur-font-resizer-component="content"] {
   color: black; }
 
