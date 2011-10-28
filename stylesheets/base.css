@@ -279,8 +279,6 @@ body#select_buttons_page [data-ur-select-buttons-component='decrement'] {
 body#select_buttons_page [data-ur-select-buttons-component][data-ur-state='disabled'] {
   opacity: 0.5; }
 
-body#select_list_page span {
-  display: block; }
 body#select_list_page .demonstration #select_list_demonstration *[data-ur-set="select-list"] {
   width: 230px;
   height: 150px;
