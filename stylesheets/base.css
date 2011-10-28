@@ -660,8 +660,13 @@ body#tutorial_page *[data-ur-tabs-component='content'] {
   display: none; }
   body#tutorial_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
     display: block; }
+body#tutorial_page *[data-ur-set="toggler"] {
+  background: #323232;
+  border: none; }
 body#tutorial_page #end_product *[data-ur-toggler-component='button'] {
-  background: #ffd700; }
+  background: #ffd700;
+  cursor: hand;
+  cursor: pointer; }
 body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
   display: block;
   background: #ffd700; }

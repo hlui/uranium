@@ -8,12 +8,12 @@ tutorials_selected: selected
   <h1>Tutorials</h1>
   <div id="tutorial_introduction">
     <h2>Introduction</h2>
-    <p>We've worked hard to make Uranium as streamlined as possible, with the least possible 
+    <p>We've worked hard to make Uranium as streamlined as possible, requiring the least possible 
     effort from the user.</p>
     <p>Part of this is ensuring that the widgets are easy to use and once you've learnt how to
     use one, the same methods are easily applied to other widgets.</p>
     <p>As such, here we're going to go over an example of how to use widgets. We'll use
-     the toggler as a pretty standard model.</p>
+     the <a href="toggler.html">toggler</a> as a model.</p>
   </div>
 </div> <!-- wrapper -->
 
@@ -21,13 +21,14 @@ tutorials_selected: selected
   <div class="tutorial" id="toggler_tutorial" data-ur-closeable='true'>
     <h2>Tutorial: How to Implement A Toggler</h2>
     <div>
-      <p>We're going to start by making a toggler. Click on a button, and something
-        should appear. Here is what we're going to build (click on "Clothings"):</p>
+      <p>We're going to start by making a toggler. What's a toggler? Well, it's a widget that has 
+        two components to it: a <i>button</i> and <i>content</i>. When we click on the button, 
+        something should appear. Here is what we're going to build (click on "Clothings"):</p>
       <div data-ur-set='toggler' id="end_product">
         <div data-ur-toggler-component='button'>
           Clothings
         </div>
-
+     
         <ul data-ur-toggler-component='content'>
           <li> Hat </li>
           <li> Socks </li>
@@ -36,6 +37,10 @@ tutorials_selected: selected
           <li> Shirts </li>
         </ul>
       </div> <!--end of toggler-->
+      <p>
+        We click on the <i>button</i> ("Clothings") and the <i>content</i> (the list of clothes)
+        appears.
+      </p>
       <p>
         Let's start with the basics: we need a div for "Clothings" and then an unordered list with
         the items in it.
@@ -53,8 +58,9 @@ tutorials_selected: selected
         &lt;/ul>
       </p>
       <p>
-        We wrap the whole toggler in a div with the data-ur-set attribute set
-        as "toggler".
+        We wrap the whole toggler in a <span class="inline_code">div</span> with the 
+        <span class="inline_code">data-ur-set</span> attribute set
+        as <span class="inline_code">"toggler"</span>.
       </p>
       <p class="code">
         &lt;div data-ur-set="toggler"><br/>
@@ -71,8 +77,9 @@ tutorials_selected: selected
         &lt;/div>
       </p>
       <p>
-        Next, we specify the button. We give the button the attribute "data-ur-toggler-component" and the
-        value "button". (Want to know why the attributes are quite long? Click <a href="./attributes_explanation.html">here</a>.)
+        Next, we specify the button. We give the button the attribute 
+        <span class="inline_code">"data-ur-toggler-component"</span> and the value <span class="inline_code">"button"</span>. 
+        (Want to know why the attributes are quite long? Click <a href="./attributes_explanation.html">here</a>.)
       </p>
       <p class="code">
         &lt;div data-ur-set="toggler"><br/>
@@ -91,8 +98,8 @@ tutorials_selected: selected
       <p>
         The final thing we need to do to the HTML is specify the content aspect of the toggler. The content
         in this case is the unordered list that we want to appear when the button is clicked. We give it the
-        attribute data-ur-toggler-component (the same as for the button, if you remember) - but this time we
-        use the value "content".
+        attribute <span class="inline_code">data-ur-toggler-component</span> (the same as for the button, if 
+        you remember) - but this time we use the value <span class="inline_code">"content"</span>.
       </p>
       <p class="code">
         &lt;div data-ur-set="toggler"><br/>
@@ -108,23 +115,24 @@ tutorials_selected: selected
         &emsp;&emsp;&lt;/ul><br/>
         &lt;/div>
       </p>
-      <p>That's all we need to do with regards to HTML. However, if you play around with your widget 
-        as it is, you'll notice not much is happening. This is because we haven't changed the CSS yet. The
+      <p>That's all we need to do with regards to HTML. Go back to the page, refresh. Try hitting the button...
+        hm, nothing seems to happen! This is because we haven't changed the CSS yet. The
         javascript is doing its job, though! Let's see how.
       </p>
       <p>
         Right-click on your widget and "inspect element". You'll see the button and the content divs have
-        an extra attribute - data-ur-state. This is, by default, set to "disabled".
+        an extra attribute - <span class="inline_code">data-ur-state</span>. This is, by default, set 
+        to <span class="inline_code">"disabled"</span>.
       </p>
       <img src="images/disabled.png">
       <p>
-        When the button is clicked, it changes to "enabled". 
+        When the button is clicked, it changes to <span class="inline_code">"enabled"</span>. 
       </p>
       <img src="images/enabled.png">
       <p>
         So, what we need to do is change the CSS of the page. It needs to be set so that
-        the content does not display when data-ur-state="disabled", but to display when 
-        data-ur-state="enabled".
+        the content does not display when <span class="inline_code">data-ur-state="disabled"</span>, 
+        but to display when <span class="inline_code">data-ur-state="enabled"</span>.
       </p>
       <p class="code">
         *[data-ur-toggler-component='content'] {<br/>

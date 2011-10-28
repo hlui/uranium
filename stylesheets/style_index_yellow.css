@@ -145,6 +145,11 @@ body {
 			-moz-border-radius: 10px;
 			border-radius: 10px;
 		}
+		.inline_code {
+			background-color: rgb(40,40,40);
+			color: #C0C0C0; font-family: Courier New; font-size: 18px;
+			margin: 5px;
+		}
 		#toggler {}
 		#togglercode {}
 		#carousel {
