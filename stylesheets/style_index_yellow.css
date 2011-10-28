@@ -148,14 +148,14 @@ body {
 		#toggler {}
 		#togglercode {}
 		#carousel {
-			height: 200px; 
+			height: 270px; 
 		}
 		#carouselcode {
 			height: 300px;
 			font-size: 11px;
 		}
 		#select_list_code {
-			height: 200px;
+			height: 230px;
 			font-size: 11px;
 		}
 			#brown { color: #FA8072; }
@@ -187,14 +187,21 @@ body {
 						cursor: hand;
 						cursor: pointer;
 					}
-					#toggler_content[data-ur-toggler-component="content"][data-ur-state="disabled"] {
+					#extoggler_content[data-ur-toggler-component="content"][data-ur-state="disabled"] {
 					  display: none;
 					}
-					#toggler_content[data-ur-toggler-component="content"][data-ur-state="enabled"] {
+					#extoggler_content[data-ur-toggler-component="content"][data-ur-state="enabled"] {
 					  display: block;
+					  background: #C0C0C0;
+					  -webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 5px;
+						padding: 10px;
+						margin-left: 5px;
+						margin-top: 10px;
 					}
 				#excarousel {
-					width: 230px; height: 120px;
+					width: 230px; height: 200px;
 					background: rgb(250,250,250) url('resources/largeshade.png') no-repeat left bottom;
 					padding: 6px; padding-left: 10px; padding-right: 10px; margin: auto; margin-top: 30px;
 					-webkit-border-radius: 5px;
@@ -235,7 +242,7 @@ body {
 						text-align: center; color: rgb(50,50,50); font-family: Rockwell;
 					}
           div[data-ur-carousel-component='view_container'] {
-            height: 270px;
+            height: 300px;
             width: 100%;
             overflow-x: hidden;
             border: 1px solid black;
@@ -255,14 +262,18 @@ body {
   					border-radius: 5px;
   				}
   				
-  				.exselectlist *[data-ur-select-list-component="content"] {
+  				*[data-ur-select-list-component="content"] {
   				  color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center; }
   				
           *[data-ur-select-list-component="content"] [data-ur-state="enabled"] {
-            background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;}
+            background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
+            -webkit-border-radius: 5px;
+  					-moz-border-radius: 5px;
+  					border-radius: 5px;
+            }
             
           .example#select_list {
-            height: 200px;
+            height: 225px;
           }
 
 /* Used by logos */			
