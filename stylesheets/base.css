@@ -48,13 +48,31 @@ body#carousel_examples_page div[name='Three'] img {
   width: 62px !important;
   height: 62px; }
 
+body#compatibility_page th {
+  background: silver; }
 body#compatibility_page td {
-  text-align: center; }
+  text-align: center;
+  background: #fafafa; }
 body#compatibility_page td.passed {
   background: #c7e8ad; }
 body#compatibility_page td.failed {
   background: #e8b5ad; }
 body#compatibility_page td.mixed {
+  background: #fbf6bb; }
+body#compatibility_page li {
+  color: #323232;
+  background: #fafafa;
+  margin: 10px;
+  width: 200px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+body#compatibility_page li.passed {
+  background: #c7e8ad; }
+body#compatibility_page li.failed {
+  background: #e8b5ad; }
+body#compatibility_page li.mixed {
   background: #fbf6bb; }
 
 .demonstration *[data-ur-tabs-component='button'] {
