@@ -191,12 +191,12 @@ body#geocode_page div[name='Three'] img {
         color: black;
         margin-left: 50px; }
 
-[data-ur-set="select-list"] {
+#exselectlist {
   border: 1px solid black;
   background: #fafafa;
   color: black;
   padding: 5px; }
-  [data-ur-set="select-list"] [data-ur-state='enabled'] {
+  #exselectlist [data-ur-state='enabled'] {
     background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 
 div[data-ur-carousel-component='view_container'] {
@@ -251,23 +251,28 @@ body#select_buttons_page [data-ur-select-buttons-component] {
 body#select_buttons_page [data-ur-select-buttons-component='select'] {
   width: 100px; }
 body#select_buttons_page [data-ur-select-buttons-component='increment'] {
-  background-color: #33cc00; }
+  background-color: #c7e8ad; }
 body#select_buttons_page [data-ur-select-buttons-component='decrement'] {
-  background-color: #cc3300; }
+  background-color: #e8b5ad; }
 body#select_buttons_page [data-ur-select-buttons-component][data-ur-state='disabled'] {
   opacity: 0.5; }
 
 body#select_lists_page span {
   display: block; }
-body#select_lists_page *[data-ur-select-list-component="content"][data-ur-state="enabled"] {
-  background-color: #336699; }
+body#select_lists_page .demonstration *[data-ur-set="select-list"] ul*[data-ur-select-list-component="content"] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 5px; }
+  body#select_lists_page .demonstration *[data-ur-set="select-list"] ul*[data-ur-select-list-component="content"] [data-ur-state='enabled'] {
+    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 
 body#select_lists_examples_page span {
   display: block; }
-body#select_lists_examples_page *[data-ur-select-list-component="content"][data-ur-state="enabled"] {
-  background-color: #336699; }
-body#select_lists_examples_page *[data-ur-id="MyUIDSelectList"] {
+body#select_lists_examples_page [data-ur-set="select-list"] ul[data-ur-select-list-component="content"] {
   color: #fafafa; }
+body#select_lists_examples_page [data-ur-set="select-list"] *[data-ur-select-list-component="content"] [data-ur-state="enabled"] {
+  background-color: #336699; }
 
 body#styling_page *[data-ur-toggler-component='button'][data-ur-id='LazyPopup'] {
   border-radius: 5px;

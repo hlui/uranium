@@ -1,16 +1,25 @@
 body#select_lists_page
   span
     display: block
-
-  *[data-ur-select-list-component="content"][data-ur-state="enabled"]
-    background-color: #336699
+  .demonstration
+    *[data-ur-set="select-list"]
+      
+      ul*[data-ur-select-list-component="content"]
+        border: 1px solid black
+        background: white
+        color: black
+        padding: 5px
+        [data-ur-state='enabled']
+          background: #FFD700 url('resources/largeshade.png') no-repeat left bottom
+          
 
 body#select_lists_examples_page
   span
     display: block
-
-  *[data-ur-select-list-component="content"][data-ur-state="enabled"]
-    background-color: #336699
-  
-  *[data-ur-id="MyUIDSelectList"]
-    color: #FAFAFA
+  [data-ur-set="select-list"]
+    ul[data-ur-select-list-component="content"]
+      color: #FAFAFA
+    *[data-ur-select-list-component="content"]
+      [data-ur-state="enabled"]
+        background-color: #336699
+      

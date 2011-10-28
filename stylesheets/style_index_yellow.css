@@ -256,7 +256,7 @@ body {
   					border-radius: 5px;
   				}
   				
-  				*[data-ur-select-list-component="content"] {
+  				.exselectlist *[data-ur-select-list-component="content"] {
   				  color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center; }
   				
           *[data-ur-select-list-component="content"] [data-ur-state="enabled"] {
