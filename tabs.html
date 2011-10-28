@@ -20,11 +20,11 @@ widget_selected: selected
   <div class="components">
     <p>Here's a list of attributes to add to HTML to make the widget work</p>
     <ul>
-      <li>data-ur-set="tabs" - add this attribute to a div that wraps the whole widget</li>
-      <li>data-ur-tabs-component="button" - add this attribute to the button (i.e. the thing to be clicked)</li>
-      <li>data-ur-tabs-component="content" - add this attribute to all the contents</li>
-      <li>data-ur-tab-id="NAME" - give matching IDs to button and the content to be toggled</li>
-      <li>data-ur-state="enabled" -  assign this attribute to the button and content that will be activated 
+      <li><span class="inline_code">data-ur-set="tabs"</span> - add this attribute to a div that wraps the whole widget</li>
+      <li><span class="inline_code">data-ur-tabs-component="button"</span> - add this attribute to the button (i.e. the thing to be clicked)</li>
+      <li><span class="inline_code">data-ur-tabs-component="content"</span> - add this attribute to all the contents</li>
+      <li><span class="inline_code">data-ur-tab-id="NAME"</span> - give matching IDs to button and the content to be toggled</li>
+      <li><span class="inline_code">data-ur-state="enabled"</span> -  assign this attribute to the button and content that will be activated 
         when the page loads</li>
     </ul>
   </div>
@@ -35,18 +35,21 @@ widget_selected: selected
   <div class='test' name='Simple' data-ur-set="tabs">
     <div class="description">
       <p>
-        Firstly, we need to define the buttons for the widget. They have the attribute data-ur-tabs-component
-        with the value "button". So far so good. Accordingly, the content should have the same attribute
-        but with the value of "content".
+        Firstly, we need to define the buttons for the widget. They have the attribute 
+        <span class="inline_code">data-ur-tabs-component</span>
+        with the value <span class="inline_code">"button"</span>. So far so good. Accordingly, the content 
+        should have the same attribute but with the value of <span class="inline_code">"content"</span>.
       </p>
       <p>
-        Now we need to make sure the buttons match the content. We give each button a data-ur-tab-id, and the
+        Now we need to make sure the buttons match the content. We give each button a 
+        <span class="inline_code">data-ur-tab-id</span>, and the
         content we wish to activate is given the same id.
       </p>
       <p>
         Finally, we need to set the states of the tabs. One tab we will want to show. The others we want to remain
         hidden. Putting that in terms from the toggler, we want one tab to be enabled and the others to be disabled.
-        All we need to do is specify the button and content we want enabled with the attribute data-ur-state="enabled".
+        All we need to do is specify the button and content we want enabled with the attribute 
+        <span class="inline_code">data-ur-state="enabled"</span>.
       </p>
     </div>
   </div>
@@ -65,15 +68,15 @@ widget_selected: selected
           Third </span>        
 
           <div data-ur-tabs-component='content' data-ur-tab-id='first' data-ur-state='enabled'>
-            <img width='300px' height='300px' src='images/pic1.jpeg?some_attr=noway'/> 
+            <img width='300px' height='300px' src='images/sample1.png?some_attr=noway'/> 
           </div>
 
           <div data-ur-tabs-component='content' data-ur-tab-id='second'>
-            <img width='300px' height='300px' src='images/pic2.jpeg?some_attr=noway'/> 
+            <img width='300px' height='300px' src='images/sample2.png?some_attr=noway'/> 
           </div>
 
           <div data-ur-tabs-component='content' data-ur-tab-id='third'>
-            <img width='300px' height='300px' src='images/pic3.jpeg?some_attr=noway'/> 
+            <img width='300px' height='300px' src='images/sample3.png?some_attr=noway'/> 
           </div>       
         </div>
       </div>

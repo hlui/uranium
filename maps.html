@@ -10,6 +10,9 @@ widget_selected: selected
 
   <h2>Description</h2>
   <div class="description">
+  <p>The maps widget allows easy embedding of a Google Map into a site. We specify the addresses
+    we want to show on the map, and these are indicated by pins. The map is fully functional (i.e.
+    you can zoom and do street-view).</p>
   <p> Note: If you're testing this locally (off of a file in your
   browser) -- then geolocation will not work. Put it in your dropbox
   to play w these features </p>
@@ -19,10 +22,11 @@ widget_selected: selected
 <h2>Components</h2>
   <div class="components">
     <p>
-      <span class="inline_code">data-ur-set="map"</span>
+      We use <span class="inline_code">data-ur-set="map"</span> to wrap the whole map widget.
     </p>
     <p>
-      data-ur-map-component
+      Then we use the attribute <span class="inline_code">data-ur-map-component</span> with the following
+      values to define various aspects of the map.
       <ul>
         <li><span class="inline_code">"canvas"</span> - sets the map canvas</li>
         <li><span class="inline_code">"address"</span> - defines the address for a map point</li>
