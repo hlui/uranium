@@ -22,20 +22,11 @@ widget_selected: selected
   <h2>Components</h2>
   <div class="components">
     <p>
-      The widget should be wrapped in a div with the attribute <span class="inline_code">data-ur-tabs-component="select-buttons"</span>.
-    </p>
-    <p>
-      We give the select tag (which produces the drop-down menu) an attribute of 
-      <span class="inline_code">data-ur-select-buttons-component="select"</span>.
-      Within the select tag, we have a series of option tags. Each of these is given a value - this isn't important
-      for the widget itself, but is useful for form submitting.
-    </p>
-    <p>
-      The button aspect of this widget comes in next. There should be two buttons - one to increment the 
-      selection and one to decrement the selection. These are given the (logical) tags of:
       <ul>
-        <li><span class="inline_code">data-ur-select-buttons-component="increment"</span> - for the increment</li>
-        <li><span class="inline_code">data-ur-select-buttons-component="decrement"</span> - for the decrement</li>
+        <li><span class="inline_code">data-ur-set="select-buttons"</span> - add this attribute to a div that wraps the whole widget</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="increment"</span> - for the increment button</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="decrement"</span> - for the decrement button</li>
       </ul>
     </p>
   </div>

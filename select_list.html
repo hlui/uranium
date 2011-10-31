@@ -20,23 +20,12 @@ widget_selected: selected
 <div class="wrapper">
   <h2>Components</h2>
   <div class="components">
-    <p>
-      As with all the Uranium widgets, we first need to wrap the widget in a div with the attribute 
-      <span class="inline_code">data-ur-set="select-list"</span>.
-    </p>
-    <p>
-      Then we have two components to consider. One is the <span class="inline_code">&lt;select&gt;</span> 
-      tag, which produces the drop-down list of options. The select tag has an attribute of 
-      <span class="inline_code">data-ur-select-list-component="select"</span>.</br>
-      Each <span class="inline_code">&lt;option&gt;</span> tag within the select tag should have a unique value.
-    </p>
-    <p>
-      The second component is the list of items (it could be a <span class="inline_code">&lt;ul&gt;</span>, for example). The list 
-      has an attribute of <span class="inline_code">data-ur-select-list-component="content"</span>. The items in the list 
-      should have a value corresponding to the value they will select in the drop-down menu. E.g. if we want the "medium" 
-      option in the drop-down selected when
-      we click on the "medium" list option, give them both the attribute <span class="inline_code">value="medium"</span>.
-    </p>
+    <p>Here's a list of attributes to add to HTML to make the widget work</p>
+    <ul>
+      <li><span class="inline_code">data-ur-set="select-list"</span> - add this attribute to a div that wraps the whole widget</li>
+      <li><span class="inline_code">data-ur-select-list-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
+      <li><span class="inline_code">data-ur-select-list-component="content"</span> - this should be applied to the list of items that will appear <i>outside</i> the drop-down; each should have a value corresponding to a value on one of the option tags in the select list.</li>
+    </ul>
   </div>
 </div> <!-- wrapper -->
 
