@@ -33,25 +33,6 @@ widget_selected: selected
 <div class="wrapper">
   <h2>Demonstration</h2>
   <div class='test' name='Simple' data-ur-set="tabs">
-    <div class="description">
-      <p>
-        Firstly, we need to define the buttons for the widget. They have the attribute 
-        <span class="inline_code">data-ur-tabs-component</span>
-        with the value <span class="inline_code">"button"</span>. So far so good. Accordingly, the content 
-        should have the same attribute but with the value of <span class="inline_code">"content"</span>.
-      </p>
-      <p>
-        Now we need to make sure the buttons match the content. We give each button a 
-        <span class="inline_code">data-ur-tab-id</span>, and the
-        content we wish to activate is given the same id.
-      </p>
-      <p>
-        Finally, we need to set the states of the tabs. One tab we will want to show. The others we want to remain
-        hidden. Putting that in terms from the toggler, we want one tab to be enabled and the others to be disabled.
-        All we need to do is specify the button and content we want enabled with the attribute 
-        <span class="inline_code">data-ur-state="enabled"</span>.
-      </p>
-    </div>
   </div>
     <div class="demonstration" id="tab_demonstration" data-ur-set="tabs">
       <h3 data-ur-tabs-component='button' data-ur-tab-id="widget"data-ur-state='enabled'> Widget</h3>

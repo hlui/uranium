@@ -21,7 +21,7 @@ home_selected: selected
 		<br>
 		<br>
 		<br>
-			<h2>What can Uranium do?</h2>
+			<h2>What is Uranium?</h2>
 				<p>
 				  Uranium is a set of "widgets" - snippets of code that allow you to do neat things on your website.
 				  It's written in javascript, but requires no knowledge of the language. It's incredibly easy to use.
@@ -30,14 +30,13 @@ home_selected: selected
 				  <p>HOW TO USE:</p>
           <ol>
             <li>Give elements pre-defined attributes and values</li>
-            <li>Import the Uranium library</li>
+            <li>Include the Uranium library</li>
             <li>.. That's it</li>
           </ol>
         </div>
-				<p>
-				  Check out this awesome example of a toggler below.
-				</p>
 				<br>
+					<div id="lightgrey"></div><!-- hr-->
+				<h2>What can Uranium do?</h2>
 			<div class="examplewrap">
 				<div id="lefthead">
 	<h3>Example</h3>						
@@ -52,7 +51,7 @@ home_selected: selected
 						<div id="extoggler" data-ur-set="toggler">
 							<div id="extitle">Toggler</div>
 							<div id="exbutton" data-ur-toggler-component="button">Click on the button</div>	
-							<div id="extoggler_content" data-ur-toggler-component="content">And the content appears</div>						
+							<div id="extoggler_content" data-ur-toggler-component="content">And content appears</div>						
 						</div>	
 		<!-- AND HERE-->
 							
@@ -75,10 +74,6 @@ home_selected: selected
 					</div><!-- code end-->
 			</div><!-- examplewrap end-->		
 	<div id="lightgrey"></div><!-- hr-->
-	
-			<p>
-			Or check out these two: a carousel and selectable lists.
-			</p>
 			<br>
 			<div class="examplewrap">
 				<div id="lefthead">
@@ -92,14 +87,14 @@ home_selected: selected
 		<!-- PLACE CODE FOR EXAMPLE BETWEEN HERE-->					
   					<div id="excarousel">
   						<div id="extitle">Carousel</div>
-  							<div data-ur-set="carousel" data-ur-set="view-container" data-ur-touch="disabled">
+  							<div data-ur-set="carousel" data-ur-set="view-container" data-ur-touch="disabled" data-ur-state="enabled">
   							  <div class="cbutton" id="exback" data-ur-carousel-component="button" data-ur-carousel-button-type="prev"><</div>	
-    							<div class="cbutton" id="exnext" data-ur-carousel-component="button" data-ur-carousel-button-type="next">></div>
+    							<div class="cbutton" id="exnext" data-ur-carousel-component="button" data-ur-carousel-button-type="next" data-ur-state="enabled">></div>
     							<div data-ur-carousel-component="scroll_container">
     							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov1.JPG" />
-    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov2.JPG" />
+    							  <!--<img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov2.JPG" />
     							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov3.JPG" />
-    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov4.JPG" />
+    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov4.JPG" />-->
     							</div> <!-- scroll_container end -->
   							<span id="exbottomtext" data-ur-carousel-component="count"> -- count -- </span>
   						</div><!-- view container end -->
@@ -193,25 +188,26 @@ home_selected: selected
 		</div><!-- wrapper-->
 		
 		<div class="wrapper">		
-			<h2>How do I get Uranium?</h2>
+			<h2>Why?</h2>
+			  <h3>It's Lightweight</h3>
 				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-				aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-				eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-				anim id est laborum.
-				</p>				
+				  The whole Uranium library is 8.4 KB zipped! This includes all the widgets and xui.
+        </p>
+        <p>
+          <a href="http://xuijs.com/">Xui</a> is a featherweight mobile js library that was used to develop Uranium.
+          Uranium is bundled with xui to make just one javascript file. This makes it perfect for
+          mobile devices, where minimizing the amount of data downloaded is key.
+          If you want it even lighter, you can make a custom build yourself.
+				</p>	
+				<h3>It's Easy to Use</h3>			
 				<p>
-				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-				eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
-				voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-				sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
-				numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
-				nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure 
-				reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas 
-				nulla pariatur.
+          Uranium requires <i>zero</i> programming on your part. That's right, you don't need to touch
+          a single line of javascript. It uses the 'declarative' javascript style, a model that looks for how 
+          html elements are formatted. Then, it constructs all the necessary js magic to make those elements come to life.
 				</p>
-				<br>
+				
+				
+				<div id="lightgrey"></div><!-- hr-->
 			<h2>Uranium is used by...</h2>
 				<div id="threelogoholder">
 					<div class="onelogo" id="oneleft" style="background: url('{{site.url}}stylesheets/resources/logo1.png') no-repeat center center;"></div>							
