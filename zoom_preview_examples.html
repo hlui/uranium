@@ -18,7 +18,7 @@ example_selected: selected
 
       <div class="normal_image">
         <img id="big_image" data-ur-zoom-preview-component='normal_image'
-        data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="images/pic1.jpeg" />
+        data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="{{site.url}}images/pic1.jpeg" />
       </div>
 
       <img data-ur-zoom-preview-component="button"/>
@@ -26,10 +26,10 @@ example_selected: selected
       </div>
 
       <ul data-ur-zoom-preview-component="thumbnails">
-        <li> <img width='30px' height='30px' src='images/pic1.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='images/pic2.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='images/pic3.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='images/pic4.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/pic1.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/pic2.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/pic3.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/pic4.jpeg?some_attr=noway'/> </li>
       </ul>
 
     </div>
