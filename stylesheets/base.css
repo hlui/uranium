@@ -82,7 +82,7 @@ body#compatibility_page li.mixed {
 .demonstration *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
   opacity: 1;
   background: silver;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid silver; }
 .demonstration *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
   display: block;
   background: silver;
