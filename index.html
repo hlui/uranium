@@ -1,28 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<LINK REL=StyleSheet HREF="stylesheets/style_index_yellow.css" TYPE="text/css"><!-- POINT TO PERMALINK STYLE SHEET-->
-  <script src="src/uranium-pretty.js"></script>
-  <title>Uranium</title>
-  <LINK REL="SHORTCUT ICON" HREF="favicon.ico">
-</head>
+---
+layout: index 
+title: Home
+name: home
+home_selected: selected
+---
 
-<body>
-	<div id="menu">
-		<div id="menuwrap">
-			<a href="index.html" class="toplinks selected" ><div class="menuselect">Main</div></a><!-- menuselect-->	
-			<a href="tutorials.html" class="toplinks"><div class="menuselect">Tutorials</div></a><!-- menuselect-->
-			<a href="widget_list.html" class="toplinks"><div class="menuselect">Widgets</div></a><!-- menuselect-->
-			<a href="example_list.html" class="toplinks"><div class="menuselect">Examples</div></a><!-- menuselect-->
-			<a href="more.html" class="toplinks"><div class="menuselect">More</div></a><!-- menuselect-->
-		</div><!-- menuwrap-->	
-	</div><!-- menu-->	
-		<div class="wrapper">
-			<div id="uraniumlogo"></div><!-- uraniumlogo-->
-			<div id="rightshadow"></div>
-			<div id="rightinfo">Fast, Lean Web<br>Interaction Library.<br><br><span class="smalltext">*for mobile too!</span></div><!-- rightinfo-->
-		</div><!-- wrapper-->	
+<div class="wrapper">
+	<div id="uraniumlogo"></div><!-- uraniumlogo-->
+	<div id="rightshadow"></div>
+	<div id="rightinfo">Fast, Lean Web<br>Interaction Library.<br><br><span class="smalltext">*for mobile too!</span></div><!-- rightinfo-->
+</div><!-- wrapper-->	
 	<div id="textbody">
 		<div class="wrapper">
 		<div id="centertext">
@@ -48,7 +35,7 @@
           </ol>
         </div>
 				<p>
-				  Check out some awesome examples below.
+				  Check out this awesome example of a toggler below.
 				</p>
 				<br>
 			<div class="examplewrap">
@@ -90,8 +77,7 @@
 	<div id="lightgrey"></div><!-- hr-->
 	
 			<p>
-			Or check out this this this.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Or check out these two: a carousel and selectable lists.
 			</p>
 			<br>
 			<div class="examplewrap">
@@ -103,21 +89,22 @@
 				</div><!-- righthead-->
 				
 				<div class="example" id="carousel">					
-		<!-- PLACE CODE FOR EXAMPLE BETWEEN HERE-->	
-		        <div data-ur-set="carousel" data-ur-set="view-container" data-ur-touch="disabled">				
-  						<div id="excarousel">
-  							<div id="extitle">Carousel</div>
-  							<div class="cbutton" id="exback" data-ur-carousel-component="button" data-ur-carousel-button-type="prev"><</div>	
-  							<div class="cbutton" id="exnext" data-ur-carousel-component="button" data-ur-carousel-button-type="next">></div>
-  							<div data-ur-carousel-component="scroll_container">
-  							  <div><img data-ur-carousel-component="item" src="stylesheets/resources/moov1.JPG"></div>
-  							  <!--<div><img data-ur-carousel-component="item" src="stylesheets/moov2.JPG"></div>
-  							  <div><img data-ur-carousel-component="item" src="stylesheets/resources/moov3.JPG"></div>
-  							  <div><img data-ur-carousel-component="item" src="stylesheets/resources/moov4.JPG"></div>-->
-  							</div>
-  							<div id="exbottomtext" data-ur-carousel-component="count"> -- count -- </div>
-  						</div>
+		<!-- PLACE CODE FOR EXAMPLE BETWEEN HERE-->					
+  					<div id="excarousel">
+  						<div id="extitle">Carousel</div>
+  							<div data-ur-set="carousel" data-ur-set="view-container" data-ur-touch="disabled">
+  							  <div class="cbutton" id="exback" data-ur-carousel-component="button" data-ur-carousel-button-type="prev"><</div>	
+    							<div class="cbutton" id="exnext" data-ur-carousel-component="button" data-ur-carousel-button-type="next">></div>
+    							<div data-ur-carousel-component="scroll_container">
+    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov1.JPG" />
+    							  <img data-ur-carousel-component="item" src="stylesheets/resources/moov2.JPG" />
+    							  <img data-ur-carousel-component="item" src="stylesheets/resources/moov3.JPG" />
+    							  <img data-ur-carousel-component="item" src="stylesheets/resources/moov4.JPG" />
+    							</div> <!-- scroll_container end -->
+  							<span id="exbottomtext" data-ur-carousel-component="count"> -- count -- </span>
+  						</div><!-- view container end -->
   					</div>
+  				
 		<!-- AND HERE-->
 						
 				</div><!-- exampleend-->					
@@ -239,11 +226,5 @@
 		</div><!-- wrapper-->
 		
 	</div><!-- textbody-->
-	<div id="bottombody">
-		<div class="wrapper" id="bottomwrap">
-				<div id="moovweblogo"></div>
-				Uranium &copy; 2011 | <a href="">About</a> | <a href="">Contact</a>
-		</div><!-- wrapper-->
-	</div><!-- bottombody end-->	
 </body>
 </html>
