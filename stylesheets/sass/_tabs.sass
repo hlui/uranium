@@ -18,7 +18,7 @@ body#tabs_page
       background-color: #C0C0C0
     &[data-ur-tabs-component='button'][data-ur-state='enabled']
       opacity: 1.0
-      border-bottom: 1px solid #C0C0C0
+      border-bottom: 1px solid black
     &[data-ur-tabs-component='content'][data-ur-state='enabled']
       display: block
       background-color: #C0C0C0
@@ -29,6 +29,8 @@ body#tabs_page
 
   #tab_widget *[data-ur-set="tabs"] *
     &[data-ur-tabs-component="button"]
+      background: #FFD700
+    &[data-ur-tabs-component="button"][data-ur-state="enabled"]
       background: #FFD700
       border-bottom: 1px solid #FFD700
     &[data-ur-tabs-component="content"]
