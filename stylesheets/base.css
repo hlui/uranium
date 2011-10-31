@@ -358,7 +358,6 @@ body#grouping_page img {
   margin-right: auto; }
 
 body#tabs_page *[data-ur-tabs-component='button'] {
-  opacity: 0.5;
   background-color: silver;
   border: 1px solid black;
   border-top-left-radius: 5px 5px;
@@ -371,9 +370,11 @@ body#tabs_page *[data-ur-tabs-component='button'] {
 body#tabs_page *[data-ur-tabs-component='content'] {
   display: none;
   background-color: silver; }
+body#tabs_page *[data-ur-tabs-component='button'][data-ur-state='disabled'] {
+  opacity: 0.5; }
 body#tabs_page *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
   opacity: 1;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid silver; }
 body#tabs_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
   display: block;
   background-color: silver;
@@ -632,21 +633,23 @@ body#togglers_examples_page .popup_content {
     body#togglers_examples_page .popup_content[data-ur-state='enabled'] img {
       width: 200px;
       height: 200px; }
-body#togglers_examples_page .buttons[data-ur-state="enabled"] span:last-child, body#togglers_examples_page .buttons[data-ur-state="disabled"] span:first-child {
+body#togglers_examples_page [name='MultipleContents'] .buttons[data-ur-state="enabled"] span:last-child, body#togglers_examples_page [name='MultipleContents'] .buttons[data-ur-state="disabled"] span:first-child {
   opacity: 0.5; }
 body#togglers_examples_page [name='MultipleContents'] .popup_content {
   position: relative;
-  z-index: -1;
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 200px;
   padding: 20px; }
-  body#togglers_examples_page [name='MultipleContents'] .popup_content [data-ur-toggler-component="content"][data-ur-state="disabled"] {
+  body#togglers_examples_page [name='MultipleContents'] .popup_content [data-ur-toggler-component="content"][data-ur-state="disabled"] img {
     display: none; }
-  body#togglers_examples_page [name='MultipleContents'] .popup_content [data-ur-toggler-component="content"][data-ur-state="enabled"] {
+  body#togglers_examples_page [name='MultipleContents'] .popup_content [data-ur-toggler-component="content"][data-ur-state="enabled"] img {
     display: block; }
   body#togglers_examples_page [name='MultipleContents'] .popup_content img {
     width: 200px;
     height: 200px; }
+body#togglers_examples_page #disabled {
+  background: #323232;
+  border: none; }
 
 body#tutorial_page *[data-ur-tabs-component='content'] {
   display: none; }

@@ -229,24 +229,27 @@ body#togglers_examples_page
 
   // multiple example
 
-  [name='MultipleContents'] .buttons
-
-  .buttons
-    &[data-ur-state="enabled"] span:last-child, &[data-ur-state="disabled"] span:first-child
-      opacity: 0.5
+  [name='MultipleContents']
+    .buttons
+      &[data-ur-state="enabled"] span:last-child, &[data-ur-state="disabled"] span:first-child
+        opacity: 0.5
 
   [name='MultipleContents']
     .popup_content
       position: relative
-      z-index: -1
-      width: 250px
-      height: 250px
+      width: 220px
+      height: 200px
       padding: 20px
       [data-ur-toggler-component="content"][data-ur-state="disabled"]
-        display: none
+        img
+          display: none
       [data-ur-toggler-component="content"][data-ur-state="enabled"]
-        display: block
+        img
+          display: block
       img
         width: 200px
         height: 200px
 
+  #disabled
+    background: #323232
+    border: none
