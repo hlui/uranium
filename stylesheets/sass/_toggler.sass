@@ -1,17 +1,19 @@
-body#toggler_page
+body#togglers_page
   *
+    &[data-ur-set="toggler"]
+      border: none
+      background: #C0C0C0
     &[data-ur-toggler-component='button']
-      opacity: 0.5
-      background-color: #93CCEA
+      background-color: #FFD700
     &[data-ur-toggler-component='content']
       display: none
-      background-color: #93CCEA
+      background-color: #FFD700
     &[data-ur-toggler-component='button'][data-ur-state='enabled']
       opacity: 1.0
     &[data-ur-toggler-component='content'][data-ur-state='enabled']
       display: block
   ul[data-ur-toggler-component="content"]
-    margin-left: 100px
+    margin-left: 10px
 
   // Popup examples
 
@@ -228,9 +230,6 @@ body#togglers_examples_page
   // multiple example
 
   [name='MultipleContents'] .buttons
-    background-color: white
-    opacity: 1.0
-    // override lazy styling from above
 
   .buttons
     &[data-ur-state="enabled"] span:last-child, &[data-ur-state="disabled"] span:first-child
@@ -243,9 +242,11 @@ body#togglers_examples_page
       width: 250px
       height: 250px
       padding: 20px
+      [data-ur-toggler-component="content"][data-ur-state="disabled"]
+        display: none
+      [data-ur-toggler-component="content"][data-ur-state="enabled"]
+        display: block
       img
         width: 200px
         height: 200px
-    [data-ur-toggler-component="content"]
-      display: inline-block
 
