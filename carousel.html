@@ -46,9 +46,9 @@ widget_selected: selected
 
   <div class='demonstration' name='One'>
 
-    <h3> Touch-enabled Widget </h3>
+    <p> Touch-enabled Widget </p>
     <div id="carousel_demonstration" data-ur-set="tabs">
-      <h3 data-ur-tabs-component='button' data-ur-tab-id="widget"data-ur-state='enabled'> Widget</h3>
+      <h3 data-ur-tabs-component='button' data-ur-tab-id="widget" data-ur-state='enabled'> Widget</h3>
 
       <h3 data-ur-tabs-component='button' data-ur-tab-id="html">HTML</h3>
       
@@ -105,7 +105,17 @@ widget_selected: selected
       
       <div class="widget_html" data-ur-tabs-component="content" data-ur-tab-id="CSS">
         <p class="code">
-         i am teh fancy css
+            div[data-ur-carousel-component='view_container'] {</br>
+              &emsp;&emsp;height: 270px;</br>
+              &emsp;&emsp;width: 100%;</br>
+              &emsp;&emsp;overflow-x: hidden; }</br>
+            div[data-ur-carousel-component="scroll_container"] {</br>
+              &emsp;&emsp;display: block; }</br>
+            div[data-ur-carousel-component="scroll_container"] > * {</br>
+              &emsp;&emsp;display: inline-block;</br>
+              &emsp;&emsp;float: left; }</br>
+            div[data-ur-carousel-component="button"][data-ur-state="disabled"] {</br>
+              &emsp;&emsp;opacity: 0.3; }</br>
         </p>
       </div><!-- closing CSS tab -->
     </div>
