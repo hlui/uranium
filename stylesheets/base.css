@@ -13,12 +13,6 @@ body#carousel_page div[data-ur-carousel-component="button"] {
   display: inline-block; }
   body#carousel_page div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
     opacity: 0.3; }
-body#carousel_page #giant {
-  height: 1000px;
-  background-color: #ff6600;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px; }
 body#carousel_page div[name='Three'] img {
   width: 62px !important;
   height: 62px; }
@@ -38,12 +32,6 @@ body#carousel_examples_page div[data-ur-carousel-component="button"] {
   display: inline-block; }
   body#carousel_examples_page div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
     opacity: 0.3; }
-body#carousel_examples_page #giant {
-  height: 1000px;
-  background-color: #ff6600;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px; }
 body#carousel_examples_page div[name='Three'] img {
   width: 62px !important;
   height: 62px; }
@@ -199,21 +187,13 @@ body#geocode_page div[name='Three'] img {
   #exselectlist [data-ur-state='enabled'] {
     background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 
-div[data-ur-carousel-component='view_container'] {
-  height: 250px;
-  width: 100%;
-  overflow-x: hidden;
-  border: 1px solid black;
-  background-color: #6495ed; }
-div[data-ur-carousel-component="scroll_container"] {
+#excarousel *[data-ur-carousel-component="scroll_container"] {
   display: block; }
-  div[data-ur-carousel-component="scroll_container"] > * {
+  #excarousel *[data-ur-carousel-component="scroll_container"] > * {
     display: inline-block;
     float: left; }
-div[data-ur-carousel-component="button"] {
-  display: inline-block; }
-  div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
-    opacity: 0.3; }
+#excarousel *[data-ur-carousel-component="button"][data-ur-state="disabled"] {
+  opacity: 0.3; }
 
 *[data-ur-map-component='canvas'] {
   width: 300px;
