@@ -3,7 +3,6 @@
 body#tabs_page
   *
     &[data-ur-tabs-component='button']
-      opacity: 0.5
       background-color: #C0C0C0
       border: 1px solid black
       border-top-left-radius: 5px 5px
@@ -16,9 +15,11 @@ body#tabs_page
     &[data-ur-tabs-component='content']
       display: none
       background-color: #C0C0C0
+    &[data-ur-tabs-component='button'][data-ur-state='disabled']
+      opacity: 0.5
     &[data-ur-tabs-component='button'][data-ur-state='enabled']
       opacity: 1.0
-      border-bottom: 1px solid black
+      border-bottom: 1px solid #C0C0C0
     &[data-ur-tabs-component='content'][data-ur-state='enabled']
       display: block
       background-color: #C0C0C0
