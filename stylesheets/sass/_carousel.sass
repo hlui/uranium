@@ -7,12 +7,12 @@ body#carousel_page
       border: 1px solid black
       background: #FFD700 url('resources/largeshade.png') no-repeat left bottom
     &[data-ur-carousel-component="scroll_container"]
-      display: block
-      > *
-        display: inline-block
+      display: inline-block
+      img
+        display: block
         float: left
-        // This is important -- otherwise, the carousel can't calculate the accurate total width
-        // background-color: #3CC;
+      // This is important -- otherwise, the carousel can't calculate the accurate total width
+      // background-color: #3CC;
     &[data-ur-carousel-component="button"]
       display: inline-block
       &[data-ur-state="disabled"]
@@ -26,7 +26,7 @@ body#carousel_page
     // on iphone without the important, it doesn't work!!
     height: 62px
 
-body
+body#carousel_examples_page
   div
     &[data-ur-carousel-component='view_container']
       height: 270px
@@ -50,6 +50,6 @@ body
 
 
   div[name='Three'] img
-    width: 62px !important
+    width: 250px !important
     // on iphone without the important, it doesn't work!!
-    height: 62px
+    height: 250px
