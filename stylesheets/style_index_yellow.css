@@ -37,10 +37,16 @@ body {
 		}
 
 /* Top Header */
-.wrapper {
+.top_wrapper {
 	max-width: 920px; min-width: 920px;
 	padding-left: 20px; padding-right: 20px;
 	margin: 0 auto;
+	overflow: hidden;
+}
+.wrapper {
+	/*max-width: 920px; min-width: 920px;*/
+	padding-left: 20px; padding-right: 20px;
+	margin: 0 50px 0 100px;
 	overflow: hidden;
 }
 	#uraniumlogo {
