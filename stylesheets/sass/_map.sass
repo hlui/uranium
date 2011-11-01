@@ -14,13 +14,20 @@
 
 // Hidden example
 
-body.hidden
+body.hidden_page
   [data-ur-set='map']
     position: absolute
-    visibility: hidden
+    visibility: hidden  
   [data-ur-toggler-component='content'][data-ur-state='enabled'] > [data-ur-set='map']
     position: relative
     visibility: visible
+
+body#advanced_map_page
+  *[data-ur-set="map"]
+    *[data-ur-map-component="icon"]
+      img
+        width: 10px
+        height: 10px
 
 body#hidden_map_page
   [data-ur-set="toggler"]

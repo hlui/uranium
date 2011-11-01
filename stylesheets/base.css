@@ -217,12 +217,16 @@ body#geocode_page div[name='Three'] img {
   position: absolute;
   visibility: hidden; }
 
-body.hidden [data-ur-set='map'] {
+body.hidden_page [data-ur-set='map'] {
   position: absolute;
   visibility: hidden; }
-body.hidden [data-ur-toggler-component='content'][data-ur-state='enabled'] > [data-ur-set='map'] {
+body.hidden_page [data-ur-toggler-component='content'][data-ur-state='enabled'] > [data-ur-set='map'] {
   position: relative;
   visibility: visible; }
+
+body#advanced_map_page *[data-ur-set="map"] *[data-ur-map-component="icon"] img {
+  width: 10px;
+  height: 10px; }
 
 body#hidden_map_page [data-ur-set="toggler"] {
   background: #323232;
