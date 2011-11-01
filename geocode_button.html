@@ -12,7 +12,16 @@ example_selected: selected
     Here, instead of the widget loading automatically (as on the <a href="geocode.html">widget page</a>), we 
     have a button that needs to be clicked in order for it to be activated.
     </p>
-  <h2>Example</h2>
+    
+  <h2>Components</h2>
+    <p>We need to include a button (rather obviously) for this example to work. Here is the extra attribute
+      required.</p>
+    <ul>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-button"</span> - to be applied to a button tag</li>
+    </ul>
+
+
+  <h2>Demonstration</h2>
 <script>
 function foo(){
   alert("Populated zip value:" + x$("input[name='zip']")[0].value);
@@ -20,7 +29,7 @@ function foo(){
 </script>
   
   <div class='test' data-ur-set="reverse-geocode" data-ur-callback="foo()">
-    <button  value="clickMe" typepe='button' data-ur-reverse-geocode-component="rg-button">Click here to find your location</button>
+    <button  value="clickMe" type='button' data-ur-reverse-geocode-component="rg-button">Click here to find your location</button>
     <form action="geocode_submit" method="get" accept-charset="utf-8" >
       <input type="text" name="addr_1" value="" id="street_address" placeholder="street address" data-ur-reverse-geocode-component="rg-street">
       <input type="text" name="city" value="" id="city" placeholder="city" data-ur-reverse-geocode-component="rg-city">
