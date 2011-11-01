@@ -15,8 +15,9 @@ example_selected: selected
 
       <div class='description'>
 
-        <p>It's super-easy to nest togglers as well. Just make sure they have different data-ur-ids.</p>
-
+        <p>It's super-easy to nest togglers as well. You'll have to use <a href="{{site.url}}grouping.html">ids</a>.
+          Give the button component and the content component the same attribute: 
+          <span class="inline_code">data-ur-id="ID"</span>.</p>
      </div>
 
 
@@ -109,7 +110,18 @@ example_selected: selected
     <div class='test' name='Disabled'>
 
       <h3>Requiring Activation</h3>
-
+      <p>We use an extra snippet of javascript to make the toggler work <i>only</i> when a different button
+        is clicked. We start by making the whole toggler have a <span class="inline_code">data-ur-state="disabled"</span>.
+        Then, we add the following javascript, which enables the toggler when clicked.
+      </p>
+      
+      <p class="code">
+        <span id="brown">&lt;script type='text/javascript'><br/>
+          <span id="green">&emsp;&emsp;x$(".activate_button").on('click',function(){Ur.setup("div[name='Disabled']")});<br/>
+        <span id="brown">&lt;/script>
+      </p>
+      
+      
       <div class='activate_button'>
       <p> Click here to activate the toggler. </p>
       </div>
