@@ -35,6 +35,11 @@ body#carousel_examples_page div[data-ur-carousel-component="button"] {
 body#carousel_examples_page div[name='Three'] img {
   width: 250px !important;
   height: 250px; }
+body#carousel_examples_page div.fixed_width {
+  width: 500px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
 
 body#compatibility_page th {
   background: silver; }
