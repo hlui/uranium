@@ -44,27 +44,43 @@ widget_selected: selected
 <div class="wrapper">
   <h2>Components</h2>
   <div class="components">
+    <h3>Required</h3>
     <p>Here's a list of attributes to add to HTML to make the widget work</p>
     <ul>
       <li><span class="inline_code">data-ur-set="reverse-geocode"</span> - add this attribute to a div that wraps the whole widget</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-street"</span> - </li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-city"</span> - </li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-zip"</span> - </li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-state"</span> - </li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-country"</span> - </li>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-street"</span> - for the street field</li>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-city"</span> - for the city field</li>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-zip"</span> - for the zip code field</li>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-state"</span> - for the state field</li>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-country"</span> - for the country field</li>
     </ul>
+    <h3>Optional</h3>
+    <ul>
+      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-button"</span> - </li>
+    </ul>
+    <p>
+      As you see in the HTML from the example below, a few other non-Uranium elements
+      are necessary to get this widget to work. These are all based around forms. For example,
+      we need a form tag to wrap the widget, with <span class="inline_code">action="geocode_submit"</span>
+      as an attribute.
+    </p>
   </div><!-- components -->
 </div> <!-- wrapper -->
 <div class="wrapper">
   <h2>Demonstration</h2>
+
   <div class='demonstration'>
+    <p>
+      The demonstration here activates on load.
+    </p>
+    
     <div id="geolocation_demonstration" data-ur-set="tabs">
       <h3 data-ur-tabs-component='button' data-ur-tab-id="widget" data-ur-state='enabled'>Widget</h3>
 
       <h3 data-ur-tabs-component='button' data-ur-tab-id="html"> HTML</h3>
     
       <div data-ur-tabs-component="content" data-ur-tab-id="widget" data-ur-state="enabled" class="example_widget">
-        <div class='test' data-ur-set="reverse-geocode">
+        <div data-ur-set="reverse-geocode">
           <form action="geocode_submit" method="get" accept-charset="utf-8" >
             <input type="text" name="addr_1" value="" id="street_address" placeholder="street address" data-ur-reverse-geocode-component="rg-street">
             <input type="text" name="city" value="" id="city" placeholder="city" data-ur-reverse-geocode-component="rg-city">
