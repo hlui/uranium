@@ -25,9 +25,9 @@ widget_selected: selected
     <p>
       <ul>
         <li><span class="inline_code">data-ur-set="carousel"</span> - add this attribute to a div that wraps the whole widget</li>
-        <li><span class="inline_code">data-ur-carousel-component="view_container"</span> - this div should wrap the whole carousel</li>
+        <li><span class="inline_code">data-ur-carousel-component="view_container"</span> - this div should wrap the whole carousel; it must be set to no overflow.</li>
         <li><span class="inline_code">data-ur-carousel-component="scroll_container"</span> - this div should wrap the scrolling part of the carousel</li>
-        <li><span class="inline_code">data-ur-carousel-component="item"</span> - this attribute is for each item that needs to be displayed in the carousel </li>
+        <li><span class="inline_code">data-ur-carousel-component="item"</span> - this attribute is for each item that needs to be displayed in the carousel; must have <span class="inline_code">float:left</span> and <span class="inline_code">display:inline</span> styles</li>
       </ul>
     </p>
     <h3> Optional </h3>
@@ -37,6 +37,7 @@ widget_selected: selected
         <li><span class="inline_code">data-ur-carousel-button-type="prev"</span> - specifies the "previous" button</li>
         <li><span class="inline_code">data-ur-carousel-button-type="next"</span> - specifies the "next" button</li>
         <li><span class="inline_code">data-ur-carousel-component="count"</span> - gives an indicator of the position of the carousel, in the form "1 of 8", etc.</li>
+        <li><span class="inline_code">data-ur-touch="disabled"</span> - by default, this is set to enabled; setting it as disabled stops the touch function</li>
       </ul>
     </p>
   </div> <!-- components -->
