@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-  <title>Geocode</title>
-  <script src="../../build/src/uranium.js"></script>
-  <link rel="stylesheet" type='text/css' href='../css/test.css' />
-  <link rel="stylesheet" type='text/css' href='../css/geocode.css' />
-</head>
+---
+layout: default 
+title: Geocode Text Inputs
+name: geocode_text_inputs
+example_selected: selected
+---
+<div class="wrapper">
+  <h1> Reverse Geocode with Text Inputs </h1>
+  
+  <h2>Description</h2>
+    <p>
+      This example illustrates that a select form is not necessary to fill a field. We've used a text input instead
+      of a select for the state and country.
+    </p>
+    
+  <h2>Example</h2>
 
-<body>
-  
-  <h1> Reverse Geocode -- Fill in Text Inputs</h1>
-  
-  <hr>
   
   <div class='test' data-ur-set="reverse-geocode">
     <button  value="clickMe" typepe='button' data-ur-reverse-geocode-component="rg-button">Reverse Geocode</button>
@@ -28,6 +28,9 @@
       <input type="text" name="country" value="" id="country" placeholder="country" data-ur-reverse-geocode-component="rg-country">
     </form>
   </div>
-</body>
-
-</html>
+</div> <!-- wrapper -->
+<div class="wrapper">
+  <p>
+  <a href="{{site.url}}geocode_examples.html">Back to examples of geolocation.</a>
+  </p>
+</div>
