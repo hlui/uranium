@@ -658,7 +658,7 @@ body#togglers_examples_page .popup_content {
   position: absolute;
   border-radius: 5px;
   background-color: #aaaaaa;
-  left: 200px;
+  left: 270px;
   text-align: center;
   padding: 30px; }
   body#togglers_examples_page .popup_content[data-ur-state='disabled'] {
