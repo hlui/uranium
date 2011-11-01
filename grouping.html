@@ -17,7 +17,36 @@ more_selected: selected
 
     <p>It's generally a better practice to use <span class="inline_code">data-ur-set</span>. This allows for better, well-structured
       and hierarchical HTML. However, it isn't possible in all cases to add this attribute. It's
-      in these instances we use <span class="inline_code">data-ur-widget-id</span> attributes. </p>
+      in these instances we use <span class="inline_code">data-ur-widget-id</span> attributes. They are functionally
+      the same - as seen below.</p>
+      
+      
+      <div class="test" name='UniqueIDs'>
+
+        <div data-ur-toggler-component='button' data-ur-id='MyFlatAccordionSocks'>
+          This Toggler Uses IDs
+        </div>
+
+        <ul data-ur-toggler-component='content' data-ur-id='MyFlatAccordionSocks'>
+          <li> Argyle </li>
+          <li> Striped </li>
+          <li> Solid </li>
+          <li> Dr. Seuss </li>
+        </ul>
+
+        <div data-ur-set="toggler">  
+          <div data-ur-toggler-component='button'>
+            This Toggler Uses a Set
+          </div>
+
+          <ul data-ur-toggler-component='content'>
+            <li> Planet Terror </li>
+            <li> Repo Man </li>
+            <li> Equilibrium </li>
+          </ul>
+        </div>
+
+      </div><!-- end of example -->
 
     <h2>How Uranium Works</h2>
 

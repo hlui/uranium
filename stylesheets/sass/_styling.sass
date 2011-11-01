@@ -90,6 +90,34 @@ body#styling_page
   //}
 
 body#grouping_page
+  [data-ur-set="toggler"]
+    background: none
+    border: none
+  [data-ur-toggler-component="button"]
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    background: gold url("resources/largeshade.png") no-repeat left bottom
+    color: black
+    margin: 5px
+    padding: 5px
+    width: 300px
+    border: none
+  [data-ur-toggler-component="content"]
+    display: none
+  [data-ur-toggler-component="content"][data-ur-state="enabled"]
+    webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    display: block
+    margin: 5px
+    padding: 5px
+    background: gold url("resources/largeshade.png") no-repeat left bottom
+    color: black
+    width: 300px
+    li
+      margin-left: 50px
+      color: black
   img
     border: 3px dashed rgb(60,60,60)
     padding: 5px
