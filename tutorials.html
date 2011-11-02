@@ -129,9 +129,11 @@ tutorials_selected: selected
         we have Uranium running in the page.</p>
       
       <h3>Third Step: Changing the CSS</h3>
-      <p>Now we've added the Uranium javascript to the page, go back and refresh the site. Try hitting the button...
-        hm, nothing seems to happen! This is because we haven't changed the CSS yet. The
-        javascript is doing its job, though! Let's see how.
+      <p>Now we've added the Uranium javascript to the page, go back and refresh the site. The moment of 
+        truth is upon us. Click on the button!</p>
+      <p>...</p>
+      <p>
+        Uh - nothing seems to happen. Why not? Is the javascript broken? Let's check.
       </p>
       <p>
         Right-click on your widget and "inspect element". You'll see the button and the content divs have
@@ -143,8 +145,9 @@ tutorials_selected: selected
         When the button is clicked, it changes to <span class="inline_code">"enabled"</span>. 
       </p>
       <img src="{{site.url}}images/enabled.png">
+      <p>The javascript is doing its job. The missing piece of the puzzle is the CSS.</p>
       <p>
-        So, what we need to do is change the CSS of the page. It needs to be set so that
+        What we need to do is change the styling of the page. It needs to be set so that
         the content does not display when <span class="inline_code">data-ur-state="disabled"</span>, 
         but to display when <span class="inline_code">data-ur-state="enabled"</span>.
       </p>
@@ -158,11 +161,26 @@ tutorials_selected: selected
       </p>
       <p>
         (This is actually what we call "lazy" CSS styling. What we're doing is only defining what
-        happens when the data-ur-state is enabled - we don't say anything about its "disabled" state.
+        happens when the data-ur-state is <i>enabled</i> - we don't say anything about its "disabled" state.
         Check out more about lazy vs proper styling <a href="{{site.url}}styling.html">here</a>.)
       </p>
       <p>
-        The widgets within Uranium are pretty much only limited by your CSS imagination.
+        By this point, the widget should be fully functional. Isn't it neat? 
+      </p>
+      
+      <h3>Fourth Step: Apply These Skills</h3>
+      <p>Pretty much all the widgets in Uranium work in a similar way. You add special attributes to the
+        tags in your HTML, import the javascript, and maybe do a little CSS re-styling.
+      </p>
+      <p>
+        Now we've whetted your appetite, you probably want to check out some more 
+        widgets. Well, <a href="widget_list.html">click here</a> for a list of 
+        all the widgets bundled with Uranium.
+      </p>
+      <p>
+        What's more, the widgets within Uranium are pretty much only limited by your 
+        CSS imagination. We've collected some of the coolest examples of widget usage
+        <a href="example_list.html">here</a>.
       </p>
     </div>
   </div><!--tutorial close-->
