@@ -37,9 +37,9 @@ body#carousel_examples_page div[name='Three'] img {
   height: 250px; }
 body#carousel_examples_page div.fixed_width {
   width: 500px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px; }
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
 
 body#compatibility_page th {
   background: silver; }
@@ -180,7 +180,7 @@ body#geocode_page div[name='Three'] img {
       display: block;
       margin: 5px;
       padding: 5px;
-      background: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
+      background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
       color: black; }
       [data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state='enabled'] li {
         color: black;
@@ -192,7 +192,7 @@ body#geocode_page div[name='Three'] img {
   color: black;
   padding: 5px; }
   #exselectlist [data-ur-state='enabled'] {
-    background: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom; }
+    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 
 #excarousel *[data-ur-carousel-component="view_container"] {
   overflow-x: hidden; }
@@ -282,7 +282,7 @@ body#select_buttons_page [data-ur-select-buttons-component][data-ur-state='disab
 body#select_list_page .demonstration #select_list_demonstration *[data-ur-set="select-list"] {
   width: 230px;
   height: 150px;
-  background: #fafafa url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
+  background: #fafafa url("resources/largeshade.png") no-repeat left bottom;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
@@ -306,7 +306,7 @@ body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-lis
   -moz-border-radius: 5px;
   border-radius: 5px; }
   body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-list-component="content"] [data-ur-state="enabled"] {
-    background-color: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom; }
+    background-color: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
   body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-list-component="content"] span {
     margin: 10px;
     padding-left: 10px;
