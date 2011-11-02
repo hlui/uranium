@@ -283,7 +283,7 @@ body {
             }
           div[data-ur-carousel-component="scroll_container"] {
             display: block; 
-            width: 2000px;}
+            width: 3000px;}
           div[data-ur-carousel-component="scroll_container"] > * {
               display: inline-block;
               float: left; }
