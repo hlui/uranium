@@ -32,6 +32,9 @@ body {
 		.toplinks.selected  div {			
 			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
+		.toplinks.selected a {
+		  color: rgb(50,50,50); text-decoration: none;
+		}
 		.toplinks.selected:hover div {
 			background: #FFD700 url('resources/largeshade.png') no-repeat left top;
 		}
@@ -178,7 +181,7 @@ body {
 		#toggler {}
 		#togglercode {}
 		#carousel {
-			height: 270px; 
+			height: 250px; 
 		}
 		#carouselcode {
 			height: 300px;
@@ -231,7 +234,7 @@ body {
 						margin-top: 10px;
 					}
 				#excarousel {
-					width: 230px; height: 200px;
+					width: 230px; height: 180px;
 					background: rgb(250,250,250) url('resources/largeshade.png') no-repeat left bottom;
 					padding: 6px; padding-left: 10px; padding-right: 10px; margin: auto; margin-top: 30px;
 					-webkit-border-radius: 5px;
@@ -241,7 +244,7 @@ body {
 					#exback {
 						width: 30px; height: 30px;
 						float: left;
-						margin: auto; margin-top: 15px;  padding-top: 10px;
+						margin: auto; padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
 						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
 						-webkit-border-radius: 5px;
@@ -252,7 +255,7 @@ body {
 					#exnext {
 						width: 30px; height: 30px;
 						float: right;
-						margin: auto; margin-top: 15px;  padding-top: 10px;
+						margin: auto; padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
 						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
 						-webkit-border-radius: 5px;
@@ -287,7 +290,7 @@ body {
           div[data-ur-carousel-component="scroll_container"] img {
             margin-right: 150px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             margin-left: 66px;
             -webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
@@ -328,6 +331,9 @@ body {
 }
 	.onelogo {
 		width: 150px; height: 75px;		
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
 	}
 	
 		#oneleft {
