@@ -724,12 +724,18 @@ body#tutorial_page *[data-ur-set="toggler"] {
 body#tutorial_page #end_product *[data-ur-toggler-component='button'] {
   background: #ffd700;
   cursor: hand;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 200px; }
 body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
   display: block;
-  background: #ffd700; }
+  background: #ffd700;
+  width: 200px; }
 body#tutorial_page #end_product *[data-ur-toggler-component='content'][data-ur-state="disabled"] {
   display: none; }
+body#tutorial_page img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
 
 body#zoom_preview_page [data-ur-zoom-preview-component='container'] {
   width: 204px;

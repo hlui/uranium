@@ -11,7 +11,7 @@ tutorials_selected: selected
     <p>We've worked hard to make Uranium as streamlined as possible, requiring the least possible 
     effort from the user.</p>
     <p>Part of this is ensuring that the widgets are easy to use and once you've learnt how to
-    use one, the same methods are easily applied to other widgets.</p>
+    implement one, the same methods are easily applied to other widgets.</p>
     <p>As such, here we're going to go over an example of how to use widgets. We'll use
      the <a href="{{site.url}}toggler.html">toggler</a> as a model.</p>
   </div>
@@ -23,10 +23,10 @@ tutorials_selected: selected
     <div>
       <p>We're going to start by making a toggler. What's a toggler? Well, it's a widget that has 
         two components to it: a <i>button</i> and <i>content</i>. When we click on the button, 
-        something should appear. Here is what we're going to build (click on "Clothings"):</p>
+        the content should appear. Here is an example of what we're going to build (click on "Clothing"):</p>
       <div data-ur-set='toggler' id="end_product">
         <div data-ur-toggler-component='button'>
-          Clothings
+          Clothing
         </div>
      
         <ul data-ur-toggler-component='content'>
@@ -38,16 +38,17 @@ tutorials_selected: selected
         </ul>
       </div> <!--end of toggler-->
       <p>
-        We click on the <i>button</i> ("Clothings") and the <i>content</i> (the list of clothes)
+        We click on the <i>button</i> ("Clothing") and the <i>content</i> (the list of clothes)
         appears.
       </p>
+      <h3>First Step: Adding Attributes to the HTML</h3>
       <p>
-        Let's start with the basics: we need a div for "Clothings" and then an unordered list with
-        the items in it.
+        Let's start with the basic, bare-bones HTML: we have a <span class="inline_code">div</span> for 
+        "Clothing" and then an unordered list with the items in it.
       </p>
       <p class="code">
         <span id="brown">&lt;div><br/>
-        <span id="green">&emsp;&emsp;Clothings<br/>
+        <span id="green">&emsp;&emsp;Clothing<br/>
         <span id="brown">&lt;div><br/>
         <span id="brown">&lt;ul><br/>
         <span id="green">&emsp;&emsp;&lt;li> Hat &lt;/li><br/>
@@ -58,19 +59,15 @@ tutorials_selected: selected
         <span id="brown">&lt;/ul>
       </p>
       <p>
-        We wrap the whole toggler in a <span class="inline_code">div</span> with the 
+        The first thing we need to do is wrap the whole toggler in a <span class="inline_code">div</span> with the 
         <span class="inline_code">data-ur-set</span> attribute set
-        as <span class="inline_code">"toggler"</span>.
-      </p>
-      <p>
-        Now we may hit a problem. What if we can't wrap the whole
-        thing in a <span class="inline_code">div</span>? Well, there's a trick around
-        that - check out the explanation of sets vs ids <a href="{{site.url}}grouping.html">here</a>.
+        as <span class="inline_code">"toggler"</span>. This is basically telling Uranium that the whole thing
+        in the div is a toggler.
       </p>
       <p class="code">
         <span id="green">&lt;div data-ur-set="toggler"><br/>
         <span id="brown">&emsp;&emsp;&lt;div><br/>
-        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothings<br/>
+        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothing<br/>
         <span id="brown">&emsp;&emsp;&lt;div><br/>
         <span id="brown">&emsp;&emsp;&lt;ul><br/>
         <span id="green">&emsp;&emsp;&emsp;&emsp;&lt;li> Hat &lt;/li><br/>
@@ -82,14 +79,19 @@ tutorials_selected: selected
         <span id="green">&lt;/div>
       </p>
       <p>
-        Next, we specify the button. We give the button the attribute 
+        This may have already caused a problem. What if we can't wrap the whole
+        thing in a <span class="inline_code">div</span>? Well, there's a trick around
+        that - check out the explanation of ids <a href="{{site.url}}grouping.html">here</a>.
+      </p>
+      <p>
+        Next, we indicate where the button is. We give the button the attribute 
         <span class="inline_code">"data-ur-toggler-component"</span> and the value <span class="inline_code">"button"</span>. 
-        (Want to know why the attributes are quite long? Click <a href="{{site.url}}attributes_explanation.html">here</a>.)
+        (Want to know why the attributes are named so? Click <a href="{{site.url}}attributes_explanation.html">here</a>.)
       </p>
       <p class="code">
         <span id="green">&lt;div data-ur-set="toggler"><br/>
         <span id="brown">&emsp;&emsp;&lt;div data-ur-toggler-component="button"><br/>
-        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothings<br/>
+        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothing<br/>
         <span id="brown">&emsp;&emsp;&lt;div><br/>
         <span id="brown">&emsp;&emsp;&lt;ul><br/>
         <span id="green">&emsp;&emsp;&emsp;&emsp;&lt;li> Hat &lt;/li><br/>
@@ -101,7 +103,7 @@ tutorials_selected: selected
         <span id="green">&lt;/div>
       </p>
       <p>
-        The final thing we need to do to the HTML is specify the content aspect of the toggler. The content
+        The final thing we need to do to this HTML is specify the content bit of the toggler. The content
         in this case is the unordered list that we want to appear when the button is clicked. We give it the
         attribute <span class="inline_code">data-ur-toggler-component</span> (the same as for the button, if 
         you remember) - but this time we use the value <span class="inline_code">"content"</span>.
@@ -109,7 +111,7 @@ tutorials_selected: selected
       <p class="code">
         <span id="green">&lt;div data-ur-set="toggler"><br/>
         <span id="brown">&emsp;&emsp;&lt;div data-ur-toggler-component="button"><br/>
-        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothings<br/>
+        <span id="green">&emsp;&emsp;&emsp;&emsp;Clothing<br/>
         <span id="brown">&emsp;&emsp;&lt;div><br/>
         <span id="brown">&emsp;&emsp;&lt;ul data-ur-toggler-component="content"><br/>
         <span id="green">&emsp;&emsp;&emsp;&emsp;&lt;li> Hat &lt;/li><br/>
@@ -120,7 +122,14 @@ tutorials_selected: selected
         <span id="brown">&emsp;&emsp;&lt;/ul><br/>
         <span id="green">&lt;/div>
       </p>
-      <p>That's all we need to do with regards to HTML. Go back to the page, refresh. Try hitting the button...
+      <p>That's all we need to do with regards to HTML.</p>
+      
+      <h3>Second Step: Don't forget the Javascript</h3>
+      <p>We've added all the necessary attributes to the HTML. The next job is to make sure
+        we have Uranium running in the page.</p>
+      
+      <h3>Third Step: Changing the CSS</h3>
+      <p>Now we've added the Uranium javascript to the page, go back and refresh the site. Try hitting the button...
         hm, nothing seems to happen! This is because we haven't changed the CSS yet. The
         javascript is doing its job, though! Let's see how.
       </p>
