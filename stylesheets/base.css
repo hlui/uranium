@@ -409,6 +409,17 @@ body#grouping_page img {
   margin-left: auto;
   margin-right: auto; }
 
+body#who_page [data-ur-set="toggler"] {
+  background: none;
+  border: none; }
+  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="button"] {
+    width: 250px; }
+  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="content"] {
+    display: none;
+    width: 250px; }
+  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="content"][data-ur-state="enabled"] {
+    display: block; }
+
 body#tabs_page *[data-ur-tabs-component='button'] {
   background-color: silver;
   border: 1px solid black;
