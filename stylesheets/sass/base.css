@@ -194,14 +194,14 @@ body#geocode_page div[name='Three'] img {
   #exselectlist [data-ur-state='enabled'] {
     background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 
-#excarousel *[data-ur-carousel-component="view_container"] {
+#excarousel *[data-ur-set="carousel"] *[data-ur-carousel-component="view_container"] {
   overflow-x: hidden; }
-  #excarousel *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="scroll_container"] {
+  #excarousel *[data-ur-set="carousel"] *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="scroll_container"] {
     display: block; }
-    #excarousel *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="scroll_container"] img {
+    #excarousel *[data-ur-set="carousel"] *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="scroll_container"] img {
       display: inline-block;
       float: left; }
-  #excarousel *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="button"][data-ur-state="disabled"] {
+  #excarousel *[data-ur-set="carousel"] *[data-ur-carousel-component="view_container"] *[data-ur-carousel-component="button"][data-ur-state="disabled"] {
     opacity: 0.3; }
 
 *[data-ur-map-component='canvas'] {

@@ -87,17 +87,18 @@ home_selected: selected
 		<!-- PLACE CODE FOR EXAMPLE BETWEEN HERE-->					
   					<div id="excarousel">
   						<div id="extitle">Carousel</div>
-  							<div data-ur-set="carousel" data-ur-set="view-container" data-ur-touch="disabled" data-ur-state="enabled">
-  							  <div class="cbutton" id="exback" data-ur-carousel-component="button" data-ur-carousel-button-type="prev"><</div>	
+  							<div data-ur-set="carousel" data-ur-touch="disabled" data-ur-state="enabled">
+  							  <div data-ur-carousel-component="view-container" >
+      							<div data-ur-carousel-component="scroll_container">
+      							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov1.JPG"/>
+      							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov2.JPG"/>
+      							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov3.JPG"/>
+      							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov4.JPG"/>
+      							</div> <!-- scroll_container end -->
+    							<div class="cbutton" id="exback" data-ur-carousel-component="button" data-ur-carousel-button-type="prev"><</div>	
     							<div class="cbutton" id="exnext" data-ur-carousel-component="button" data-ur-carousel-button-type="next" data-ur-state="enabled">></div>
-    							<div data-ur-carousel-component="scroll_container">
-    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov1.JPG" />
-    							  <!--<img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov2.JPG" />
-    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov3.JPG" />
-    							  <img data-ur-carousel-component="item" src="{{site.url}}stylesheets/resources/moov4.JPG" />-->
-    							</div> <!-- scroll_container end -->
-  							<span id="exbottomtext" data-ur-carousel-component="count"> -- count -- </span>
-  						</div><!-- view container end -->
+    						</div><!-- view container end -->
+    					</div>
   					</div>
   				
 		<!-- AND HERE-->
