@@ -60,12 +60,12 @@ home_selected: selected
 					<div class="mainpage_code" id="toggler">	
 		<!-- PLACE EXAMPLE CODE BETWEEN HERE-->
 						<!-- fakecode-->
-						<span id="brown">&lt;div data-ur-set="toggler"&gt;</span><br>
+						<span id="brown">&lt;div data-ur-set='toggler'&gt;</span><br>
 							<span id="green">&emsp;&emsp;&lt;p&gt;Toggler&lt;/p&gt;</span><br>
-								<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component="button"&gt;</span><br>
+								<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component='button'&gt;</span><br>
 								<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Click on the button&lt;/p&gt;</span><br>
 								<span id="green">&emsp;&emsp;&lt;/div&gt;</span><br>
-							<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component="content"&gt;</span><br>
+							<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component='content'&gt;</span><br>
 							<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;And content appears&lt;/p&gt;</span><br>
 							<span id="green">&emsp;&emsp;&lt;/div&gt;<br>
 						<span id="brown">&lt;/div&gt;</span>				
@@ -110,19 +110,21 @@ home_selected: selected
 		<!-- PLACE EXAMPLE CODE BETWEEN HERE-->
 		
 						<!-- fakecode-->
-						<span id="brown">&lt;div data-ur-set='carousel' data-ur-carousel-component='view_container' data-ur-touch='disabled'&gt;<br>
-							&nbsp;&nbsp; &lt;span data-ur-carousel-component='count'&gt; -- count -- &lt;/span&gt;<br>
-							&nbsp;&nbsp; &lt;div data-ur-carousel-component='button'data-ur-carousel-button-type='prev' &gt;<br></span>
-						<span id="green">&nbsp;&nbsp; < </span><span id="brown">&lt;/div&gt;<br>
-							&nbsp;&nbsp; &lt;div data-ur-carousel-component='button' data-ur-carousel-button-type='next' &gt;<br></span>
-						<span id="green">&nbsp;&nbsp; > </span><span id="brown">&lt;/div&gt;<br>
-							&nbsp;&nbsp; &lt;div data-ur-carousel-component='scroll_container'&gt;<br></span>
-						<span id="green">&nbsp;&nbsp;&nbsp; &lt;img data-ur-carousel-component='item' src='image1.jpg' /&gt;<br>
-							&nbsp;&nbsp;&nbsp; &lt;img data-ur-carousel-component='item' src='image2.jpg' /&gt;<br>
-							&nbsp;&nbsp;&nbsp; &lt;img data-ur-carousel-component='item' src='image3.jpg' /&gt;<br>
-							&nbsp;&nbsp;&nbsp; &lt;img data-ur-carousel-component='item' src='image4.jpg' /&gt;<br></span>
-						<span id="brown">&nbsp;&nbsp; &lt;/div&gt;<br>
-							&lt;/div&gt;</span>
+						<span id="brown">&lt;div data-ur-set='carousel' data-ur-carousel-component='view_container' data-ur-touch='disabled'&gt;<br/>
+						
+						<span id="green">	&emsp;&emsp;&lt;div data-ur-carousel-component='scroll_container'&gt;<br/>
+						<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='1.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='2.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='3.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='4.jpg' /&gt;<br/>
+						<span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
+						  <span id="green">&emsp;&emsp;&lt;div data-ur-carousel-component='button' data-ur-carousel-button-type='prev' &gt;<br/>
+  						<span id="brown">&emsp;&emsp;&emsp;&emsp;< <br/>
+  						<span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
+  							&emsp;&emsp;&lt;div data-ur-carousel-component='button' data-ur-carousel-button-type='next' &gt;<br/>
+  						<span id="brown">&emsp;&emsp;&emsp;&emsp;> <br/>
+  						  <span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
+							<span id="brown">&lt;/div&gt;
 		<!-- AND HERE-->
 		
 						<!-- fakecode-->
@@ -147,7 +149,7 @@ home_selected: selected
             <option selected='true' value='SKU-A'> Click on </option>
             <option value='SKU-B'> a Value </option>
             <option value='SKU-C'> in this </option>
-            <option value='SKU-D'> List Here </option>
+            <option value='SKU-D'> List </option>
           </select>
 
 
@@ -155,7 +157,7 @@ home_selected: selected
             <div value='SKU-A'> Click on </div>
             <div value='SKU-B'> a Value </div>
             <div value='SKU-C'> in this </div>
-            <div value='SKU-D'> List Here </div>
+            <div value='SKU-D'> List </div>
           </div>
         </div>
 <!-- AND HERE-->
@@ -204,12 +206,14 @@ home_selected: selected
 				<p>
           Uranium requires <i>zero</i> programming on your part. That's right, you don't need to touch
           a single line of javascript. It uses the 'declarative' javascript style, a model that looks for how 
-          html elements are formatted. Then, it constructs all the necessary js magic to make those elements come to life.
+          html elements are formatted. Then, it constructs all the necessary js magic to make those 
+          elements come to life.
 				</p>
 				
 				
 				<div id="lightgrey"></div><!-- hr-->
 			<h2>Uranium is used by...</h2>
+			<p></p>
 				<div id="threelogoholder">
 					<a href="http://m.macys.com/"><div class="onelogo" id="oneleft" style="background: url('{{site.url}}stylesheets/resources/logo_macys.jpeg') no-repeat center center;"></div></a>						
 					<a href="http://m.cancer.org/"><div class="onelogo" id="oneright" style="background: url('{{site.url}}stylesheets/resources/logo_ACS.jpg') no-repeat center center;"></div></a>
