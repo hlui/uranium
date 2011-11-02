@@ -9,10 +9,13 @@ example_selected: selected
 
 
   <div class='test' name='OnePointFive'>
-    <h3> Touch enabled example. </h3>
+    <h3> Vertical Scrolling </h3>
 
     <p> This carousel allows for vertical scrolling.  </p>
-  
+    <ul>
+      <li><span class="inline_code">data-ur-vertical-scroll="enabled"</span> - apply this to the
+        view container</li>
+    </ul>
     <div class="fixed_width" data-ur-set='carousel'
       data-ur-carousel-component='view_container'
       data-ur-id='MyFirstKindaCarousel' data-ur-vertical-scroll='enabled'>
@@ -39,8 +42,11 @@ example_selected: selected
       <div id="lightgrey"></div><!-- hr-->
 
   <div class='test' name='Two'>
-    <h3> No-touch (just buttons) example. </h3>
-  
+    <h3> No-touch Example </h3>
+    <p>
+      Here we have a carousel with the touch disabled, so it's completely
+      reliant on the buttons to work.
+    </p>
     <div class="fixed_width" data-ur-set='carousel'
       data-ur-carousel-component='view_container' data-ur-touch='disabled'>
       <span data-ur-carousel-component='count'> -- count -- </span>
@@ -66,8 +72,15 @@ example_selected: selected
       <div id="lightgrey"></div><!-- hr-->
 
   <div class='test' name='Three'>
-    <h3> Multi pane example. </h3>
-  
+    <h3> Multi-Pane Example </h3>
+    <p>
+      In this carousel, multiple elements are shown in the view container. As many
+      as possible, depending on the width of the container.
+    </p>
+    <ul>
+      <li><span class="inline_code">data-ur-type="multi"</span> - apply this to the
+        view container</li>
+    </ul>
     <div class="fixed_width" data-ur-set='carousel'
       data-ur-carousel-component='view_container' data-ur-type='multi'>
       <span data-ur-carousel-component='count'> -- count -- </span>
@@ -95,7 +108,7 @@ example_selected: selected
   
   
   <div class='test' name='One'>
-    <h3> Jump To.. function </h3>
+    <h3> "Jump to..." function </h3>
     
     <p>
       In this example, we have a bit of extra javascript to include in the page. We use this to
