@@ -18,11 +18,11 @@ body#carousel_page div[name='Three'] img {
   height: 62px; }
 
 body#carousel_examples_page div[data-ur-carousel-component='view_container'] {
-  height: 270px;
+  height: 280px;
   width: 100%;
   overflow-x: hidden;
   border: 1px solid black;
-  background: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom; }
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 body#carousel_examples_page div[data-ur-carousel-component="scroll_container"] {
   display: block; }
   body#carousel_examples_page div[data-ur-carousel-component="scroll_container"] > * {
@@ -36,7 +36,13 @@ body#carousel_examples_page div[name='Three'] img {
   width: 250px !important;
   height: 250px; }
 body#carousel_examples_page div.fixed_width {
-  width: 500px;
+  width: 400px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+body#carousel_examples_page div#multipane {
+  width: 900px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
