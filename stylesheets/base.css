@@ -237,7 +237,30 @@ body.hidden_page [data-ur-toggler-component='content'][data-ur-state='enabled'] 
 body#advanced_map_page *[data-ur-set="map"] *[data-ur-map-component="icon"] img {
   width: 10px;
   height: 10px; }
-
+  
+body#advanced_map_page span#map_button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
+  color: black;
+  margin: 5px;
+  padding: 5px; }
+body#advanced_map_page *[data-ur-set="map"] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: hidden;
+  margin: 5px;
+  padding: 5px;
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
+  color: black; 
+  width: 300px;}
+  
+body#hidden_map_page *[data-ur-toggler-component="content"] {
+  width: 300px;
+}
+  
 body#hidden_map_page [data-ur-set="toggler"] {
   background: #323232;
   border: none; }
@@ -246,7 +269,7 @@ body#late_load_map_page span#map_button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: gold url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
   color: black;
   margin: 5px;
   padding: 5px; }
@@ -257,8 +280,9 @@ body#late_load_map_page *[data-ur-set="map"] {
   display: hidden;
   margin: 5px;
   padding: 5px;
-  background: gold url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
-  color: black; }
+  background: gold url("resources/largeshade.png") no-repeat left bottom;
+  color: black; 
+  width: 300px;}
 
 body#font_resizer_page p[data-ur-font-resizer-component="content"] {
   color: black; }
