@@ -314,6 +314,12 @@ body {
   					-moz-border-radius: 5px;
   					border-radius: 5px;
   				}
+  				#exselectlist select{
+  				  margin-left: auto;
+  				  margin-right: auto;
+  				  width: 100%;
+  				  margin-top: 10px;
+  				}
   				
   				*[data-ur-select-list-component="content"] {
   				  color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center; }
