@@ -30,7 +30,40 @@ widget_selected: selected
   <h2>Components</h2>
   <div class="components">
     <p>
+      To the wrapper div:
     </p>
+    <ul>
+      <li><span class="inline_code">data-ur-set="zoom-preview"</span> - add this attribute to a div that wraps the whole widget</li>
+      <li><span class="inline_code">data-ur-zoom-preview-component='container'</span></li>
+    </ul>
+    <p>
+      To the large image:
+    </p>
+    <ul>
+      <li><span class="inline_code">data-ur-zoom-preview-component='zoom_image'</span></li>
+      <li><span class="inline_code">data-ur-src-modifier-match='(some_attr=)(.*)'</span></li>
+      <li><span class="inline_code">data-ur-src-modifier-replace='$1yesway'</span></li>
+      <li><span class="inline_code">style="visibility: hidden"</span></li>
+    </ul>
+    <p>
+      To the main image:
+    </p>
+    <ul>
+      <li><span class="inline_code">data-ur-zoom-preview-component='normal_image'</span></li>
+      <li><span class="inline_code">data-ur-zoom-modifier-match='$'</span></li>
+      <li><span class="inline_code">data-ur-zoom-modifier-replace='?small_image=true'</span></li>
+      <li><span class="inline_code">src='images/pic1.jpeg'</span></li>
+      <li>This image should be styled to 200px by 200px in the CSS</li>
+    </ul>
+    <p>
+      To the thumbnail image:
+    </p>
+    <ul>
+      <li><span class="inline_code">data-ur-zoom-preview-component='button'</span></li>
+      <li><span class="inline_code">data-ur-src-modifier-match='$'</span></li>
+      <li><span class="inline_code">data-ur-src-modifier-replace='&button_image=true'</span></li>
+      <li>This image should be styled to roughly 62px by 62px in the CSS</li>
+    </ul>
   </div>
 </div><!--wrapper-->
 <div class="wrapper">
@@ -40,6 +73,8 @@ widget_selected: selected
       <h3 data-ur-tabs-component='button' data-ur-tab-id="widget" data-ur-state='enabled'>Widget</h3>
 
       <h3 data-ur-tabs-component='button' data-ur-tab-id="html"> HTML</h3>
+      
+      
     
       <div data-ur-tabs-component="content" data-ur-tab-id="widget" data-ur-state="enabled" class="example_widget">
         <div data-ur-set='zoom-preview' data-ur-zoom-preview-component='container'>
@@ -47,7 +82,7 @@ widget_selected: selected
       
           <div class="normal_image">
             <img data-ur-zoom-preview-component='normal_image'
-            data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="images/pic1.jpeg" />
+            data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="images/zoom1.jpg" />
           </div>
 
           <img data-ur-src-modifier-match='$' data-ur-src-modifier-replace='&button_image=true' data-ur-zoom-preview-component='button'/>
@@ -77,15 +112,3 @@ widget_selected: selected
     <p>More examples of zoom previews can be found <a href="{{site.url}}zoom_preview_examples.html">here</a>.</p>
   </div>
 </div> <!-- wrapper -->
-
-
-<script type='text/javascript'>
-  var big_image = document.getElementById("big_image");
-  x$().iterate(
-    document.querySelectorAll("[data-ur-zoom-preview-component='thumbnails'] img"),
-    function(elem) {
-      elem.addEventListener('click', function(evt){big_image.src=evt.target.src;}, false);
-    }
-  );
-</script>
-

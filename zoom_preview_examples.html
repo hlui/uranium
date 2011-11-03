@@ -9,7 +9,21 @@ example_selected: selected
   <h1> Zoom Preview Examples </h1>
   <div class='test' name='Thumbnails'>
 
-    <h3> Touch and Drag on the thumbnail to view the zoom preview </h3>
+    <p> In this case of the zoom preview widget, we have a series of thumbnails at the bottom of the
+      main image. Clicking on a thumbnail takes us to the zoom preview for that image. An extra bit
+      of javascript is needed, however, to make this work. </p>
+    
+    <p class="code">
+      <span id="brown">&lt;script type='text/javascript'><br/>
+        <span id="green">&emsp;&emsp;var big_image = document.getElementById("big_image");<br/>
+        <span id="green">&emsp;&emsp;x$().iterate(<br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;document.querySelectorAll("[data-ur-zoom-preview-component='thumbnails'] img"),<br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;function(elem) {<br/>
+            <span id="green">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;elem.addEventListener('click', function(evt){big_image.src=evt.target.src;}, false);<br/>
+          <span id="brown">&emsp;&emsp;&emsp;&emsp;}<br/>
+        <span id="green">&emsp;&emsp;);<br/>
+      <span id="brown">&lt;/script>
+    </p>
 
     <div data-ur-set='zoom-preview'>
 
@@ -18,7 +32,7 @@ example_selected: selected
 
       <div class="normal_image">
         <img id="big_image" data-ur-zoom-preview-component='normal_image'
-        data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="{{site.url}}images/pic1.jpeg" />
+        data-ur-zoom-modifier-match='$' data-ur-zoom-modifier-replace='?small_image=true' src="{{site.url}}images/zoom1.jpg" />
       </div>
 
       <img data-ur-zoom-preview-component="button"/>
@@ -26,10 +40,10 @@ example_selected: selected
       </div>
 
       <ul data-ur-zoom-preview-component="thumbnails">
-        <li> <img width='30px' height='30px' src='{{site.url}}images/pic1.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='{{site.url}}images/pic2.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='{{site.url}}images/pic3.jpeg?some_attr=noway'/> </li>
-        <li> <img width='30px' height='30px' src='{{site.url}}images/pic4.jpeg?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/zoom1.JPG?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/zoom2.JPG?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/zoom3.JPG?some_attr=noway'/> </li>
+        <li> <img width='30px' height='30px' src='{{site.url}}images/zoom4.JPG?some_attr=noway'/> </li>
       </ul>
 
     </div>

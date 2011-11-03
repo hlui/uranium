@@ -806,6 +806,14 @@ body#zoom_preview_page .normal_image {
     width: 200px;
     height: 200px; }
 
+body#zoom_preview_examples_page [data-ur-set="zoom-preview"] {
+  background: #FAFAFA url("resources/largeshade.png") no-repeat left bottom;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 210px; }
+
 body#zoom_preview_examples_page [data-ur-zoom-preview-component='container'] {
   width: 204px;
   height: 204px;
