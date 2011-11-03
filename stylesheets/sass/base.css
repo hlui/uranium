@@ -167,7 +167,7 @@ body#geocode_page div[name='Three'] img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
+    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
     color: black;
     margin: 5px;
     padding: 5px; }

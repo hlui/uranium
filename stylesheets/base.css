@@ -177,7 +177,7 @@ body#geocode_page div[name='Three'] img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: #ffd700 url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
+    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
     color: black;
     margin: 5px;
     padding: 5px; }
@@ -507,30 +507,33 @@ body#tabs_examples_page *[data-ur-tabs-component='button'] {
   position: relative; }
 body#tabs_examples_page *[data-ur-tabs-component='content'] {
   display: none;
-  background-color: #ffd700;
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
   border-radius: 5px; }
 body#tabs_examples_page *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
   opacity: 1;
   border-bottom: 1px solid #ffd700; }
 body#tabs_examples_page *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
   display: block;
-  background-color: #ffd700;
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
   border: 1px solid black;
-  padding: 20px; }
+  padding: 20px; 
+  width: 300px;}
 body#tabs_examples_page *[data-ur-set="tabs"][data-ur-tab-id="html"] {
   text-align: left; }
 body#tabs_examples_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="button"] {
-  background: #ffd700; }
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 body#tabs_examples_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="content"] {
-  background: #ffd700; }
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
 body#tabs_examples_page div[name='accordions'] *[data-ur-tabs-component='button'] {
   display: block;
-  border: 1px solid black;
-  background-color: #ffd700;
-  border-radius: 5px; }
+  border: 1px solid #323232;
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
+  border-radius: 5px; 
+  width: 300px;}
 body#tabs_examples_page div[name='accordions'] *[data-ur-tabs-component='content'] {
-  background-color: #ffd700;
-  margin: 0px 20px; }
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
+  margin: 0px 20px; 
+  width: 300px;}
 
 li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {
   background-color: #a3e2f5; }
@@ -718,7 +721,7 @@ body#togglers_examples_page .popup_content {
   position: absolute;
   border-radius: 5px;
   background-color: #aaaaaa;
-  left: 270px;
+  left: 300px;
   text-align: center;
   padding: 30px; }
   body#togglers_examples_page .popup_content[data-ur-state='disabled'] {
