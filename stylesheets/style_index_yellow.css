@@ -218,7 +218,7 @@ body {
 						width: 190px; height: 30px;
 						margin: auto; margin-top: 15px;  padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
+						background: #FFD700;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;						
@@ -253,7 +253,7 @@ body {
 						float: left;
 						margin: auto; padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
+						background: #FFD700;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;			
@@ -267,7 +267,7 @@ body {
 						float: right;
 						margin: auto; padding-top: 10px;
 						color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center;
-						background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
+						background: #FFD700;
 						-webkit-border-radius: 5px;
 						-moz-border-radius: 5px;
 						border-radius: 5px;		
@@ -326,7 +326,7 @@ body {
   				  color: rgb(50,50,50); font-size: 18px; font-family: Rockwell; text-align: center; }
   				
           *[data-ur-select-list-component="content"] [data-ur-state="enabled"] {
-            background: #FFD700 url('resources/largeshade.png') no-repeat left bottom;
+            background: #FFD700;
             -webkit-border-radius: 5px;
   					-moz-border-radius: 5px;
   					border-radius: 5px;

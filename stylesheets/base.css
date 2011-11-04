@@ -177,7 +177,7 @@ body#geocode_page div[name='Three'] img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
+    background: #ffd700;
     color: black;
     margin: 5px;
     padding: 5px;
@@ -192,7 +192,7 @@ body#geocode_page div[name='Three'] img {
       margin: 5px;
       padding: 5px;
       width: 250px;
-      background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
+      background: #ffd700;
       color: black; }
       [data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state='enabled'] li {
         color: black;
@@ -204,7 +204,7 @@ body#geocode_page div[name='Three'] img {
   color: black;
   padding: 5px; }
   #exselectlist [data-ur-state='enabled'] {
-    background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; }
+    background: #ffd700}
 
 #excarousel *[data-ur-carousel-component="view_container"] {
   overflow-x: hidden; }
@@ -782,6 +782,10 @@ body#tutorial_page img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
+
+body#tutorial_page .tutorial_para {
+  margin-left: 25px;
+}
 
 body#zoom_preview_page [data-ur-zoom-preview-component='container'] {
   width: 204px;
