@@ -180,7 +180,8 @@ body#geocode_page div[name='Three'] img {
     background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
     color: black;
     margin: 5px;
-    padding: 5px; }
+    padding: 5px;
+    width: 250px; }
   [data-ur-set="toggler"] [data-ur-toggler-component='content'] {
     display: none; }
     [data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state='enabled'] {
@@ -190,6 +191,7 @@ body#geocode_page div[name='Three'] img {
       display: block;
       margin: 5px;
       padding: 5px;
+      width: 250px;
       background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
       color: black; }
       [data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state='enabled'] li {
@@ -487,7 +489,8 @@ body#tabs_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="butto
   background: #ffd700;
   border-bottom: 1px solid #ffd700; }
 body#tabs_page #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="content"] {
-  background: #ffd700; }
+  background: #ffd700 url("resources/largeshade.png") no-repeat left bottom; 
+  width: 325px;}
 body#tabs_page div[name='accordions'] *[data-ur-tabs-component='button'] {
   display: block;
   border: 1px solid blue;
