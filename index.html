@@ -23,22 +23,19 @@ home_selected: selected
 		<br>
 			<h2>What is Uranium?</h2>
 				<p>
-				  Uranium is a set of "widgets" - snippets of code that allow you to do neat things on your website. You can
-				  see some examples below.
-				  It's written in javascript, but requires no knowledge of the language. It's incredibly easy to use.
+				  Uranium is a set of widgets - snippets of code that allow you to do neat things on your website.
 				</p>
 				<div id="how_to_use">
 				  <p>HOW TO USE:</p>
           <ol>
-            <li>Give HTML elements pre-defined attributes</li>
-            <li>Include the Uranium javascript library</li>
+            <li>Give HTML pre-defined attributes</li>
+            <li>Include the Uranium library</li>
             <li>... That's it</li>
           </ol>
         </div>
         <p>
           It's seriously that easy. We've put in all the hard work to make awesome widgets that are
-          really easy to use. Just a couple of quick additions to your HTML and you've got a fully-functional
-          accordion that reveals its contents on a click, or a great carousel for scrolling through images.
+          really easy to use.
         </p>
         <p>
           Uranium is perfect for mobile development. Lots of the widgets were made with that in mind. But,
@@ -46,7 +43,23 @@ home_selected: selected
         </p>
 				<br>
 				<div id="sidenote">*he may not have actually said this, but we think he'd love Uranium anyway.</div>
-					<div id="lightgrey"></div><!-- hr-->
+		</div> <!-- wrapper-->
+				<div class="wrapper">		
+    			<h2>Why use Uranium?</h2>
+    			  <h3>It's Lightweight</h3>
+    				<p>
+    				  The whole Uranium library is 8.4 KB zipped! This includes all the widgets and <a href="http://xiujs.com">xui</a>.
+            </p>
+            
+    				<h3>It's Easy to Use</h3>			
+    				<p>
+              Uranium requires <i>zero</i> javascript programming on your part.
+    				</p>
+    			</div> <!-- why wrapper-->
+    	
+					
+			<div class="wrapper">
+			  <div id="lightgrey"></div><!-- hr-->
 				<h2>What can Uranium do?</h2>
 			<div class="examplewrap">
 				<div id="lefthead">
@@ -71,14 +84,14 @@ home_selected: selected
 					<div class="mainpage_code" id="toggler">	
 		<!-- PLACE EXAMPLE CODE BETWEEN HERE-->
 						<!-- fakecode-->
-						<span id="brown">&lt;div data-ur-set='toggler'&gt;</span><br>
-							<span id="green">&emsp;&emsp;&lt;p&gt;Toggler&lt;/p&gt;</span><br>
-								<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component='button'&gt;</span><br>
+						<span id="brown">&lt;div <span id="green">data-ur-set='toggler'<span id="brown">&gt;</span><br>
+							<span id="brown">&emsp;&emsp;&lt;p&gt;Toggler&lt;/p&gt;</span><br>
+								<span id="brown">&emsp;&emsp;&lt;div <span id="green">data-ur-toggler-component='button'<span id="brown">&gt;</span><br>
 								<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Click on the button&lt;/p&gt;</span><br>
-								<span id="green">&emsp;&emsp;&lt;/div&gt;</span><br>
-							<span id="green">&emsp;&emsp;&lt;div data-ur-toggler-component='content'&gt;</span><br>
+								<span id="brown">&emsp;&emsp;&lt;/div&gt;</span><br>
+							<span id="brown">&emsp;&emsp;&lt;div <span id="green">data-ur-toggler-component='content'<span id="brown">&gt;</span><br>
 							<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;p&gt;And content appears&lt;/p&gt;</span><br>
-							<span id="green">&emsp;&emsp;&lt;/div&gt;<br>
+							<span id="brown">&emsp;&emsp;&lt;/div&gt;<br>
 						<span id="brown">&lt;/div&gt;</span>				
 						<!-- fakecode-->
 		<!-- AND HERE-->
@@ -124,20 +137,20 @@ home_selected: selected
 				
 					<div class="mainpage_code" id="carouselcode">
 		<!-- PLACE EXAMPLE CODE BETWEEN HERE-->
-						<span id="brown">&lt;div data-ur-set='carousel' data-ur-carousel-component='view_container' data-ur-touch='disabled'&gt;<br/>
+						<span id="brown">&lt;div <span id="green">data-ur-set='carousel' data-ur-carousel-component='view_container' data-ur-touch='disabled'<span id="brown">&gt;<br/>
 						
-						<span id="green">	&emsp;&emsp;&lt;div data-ur-carousel-component='scroll_container'&gt;<br/>
-						<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='1.jpg' /&gt;<br/>
-							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='2.jpg' /&gt;<br/>
-							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='3.jpg' /&gt;<br/>
-							&emsp;&emsp;&emsp;&emsp;&lt;img data-ur-carousel-component='item' src='4.jpg' /&gt;<br/>
-						<span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
-						  <span id="green">&emsp;&emsp;&lt;div data-ur-carousel-component='button' data-ur-carousel-button-type='prev' &gt;<br/>
+						<span id="brown">	&emsp;&emsp;&lt;div <span id="green">data-ur-carousel-component='scroll_container'<span id="brown">&gt;<br/>
+						<span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;img <span id="green">data-ur-carousel-component='item'<span id="brown"> src='1.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img <span id="green">data-ur-carousel-component='item'<span id="brown"> src='2.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img <span id="green">data-ur-carousel-component='item'<span id="brown"> src='3.jpg' /&gt;<br/>
+							&emsp;&emsp;&emsp;&emsp;&lt;img <span id="green">data-ur-carousel-component='item'<span id="brown"> src='4.jpg' /&gt;<br/>
+						<span id="brown">&emsp;&emsp;&lt;/div&gt;<br/>
+						  <span id="brown">&emsp;&emsp;&lt;div <span id="green">data-ur-carousel-component='button' data-ur-carousel-button-type='prev'<span id="brown"> &gt;<br/>
   						<span id="brown">&emsp;&emsp;&emsp;&emsp;< <br/>
-  						<span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
-  							&emsp;&emsp;&lt;div data-ur-carousel-component='button' data-ur-carousel-button-type='next' &gt;<br/>
+  						<span id="brown">&emsp;&emsp;&lt;/div&gt;<br/>
+  							&emsp;&emsp;&lt;div <span id="green">data-ur-carousel-component='button' data-ur-carousel-button-type='next'<span id="brown"> &gt;<br/>
   						<span id="brown">&emsp;&emsp;&emsp;&emsp;> <br/>
-  						  <span id="green">&emsp;&emsp;&lt;/div&gt;<br/>
+  						  <span id="brown">&emsp;&emsp;&lt;/div&gt;<br/>
 							<span id="brown">&lt;/div&gt;
 		<!-- AND HERE-->
 		
@@ -181,21 +194,21 @@ home_selected: selected
 			<div class="mainpage_code" id="select_list_code">	
 <!-- PLACE EXAMPLE CODE BETWEEN HERE-->
 				<!-- fakecode-->
-				<span id="brown">&lt;div data-ur-set='select-list'><br/>
-        <span id="green">&emsp;&emsp;&lt;select data-ur-select-list-component='select'></span><br/>
+				<span id="brown">&lt;div <span id="green">data-ur-set='select-list'<span id="brown">><br/>
+        <span id="brown">&emsp;&emsp;&lt;select <span id="green">data-ur-select-list-component='select'<span id="brown">></span><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option selected='true' value='SKU-A'> Click on &lt;/option></span><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-B'> a Value &lt;/option></span><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-C'> in this &lt;/option></span><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;option value='SKU-D'> List &lt;/option></span><br/>
-          <span id="green">&emsp;&emsp;&lt;/select></span><br/>
+          <span id="brown">&emsp;&emsp;&lt;/select></span><br/>
 
 
-        <span id="green">&emsp;&emsp;&lt;ul data-ur-select-list-component='content'></span><br/>
+        <span id="brown">&emsp;&emsp;&lt;ul <span id="green">data-ur-select-list-component='content'<span id="brown">></span><br/>
         <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-A'> Click on &lt;/li></span><br/>
         <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-B'> a Value &lt;/li></span><br/>
         <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-C'> in this &lt;/li></span><br/>
         <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;li value='SKU-D'> List &lt;/li></span><br/>
-        <span id="green">&emsp;&emsp;&lt;ul><br/>
+        <span id="brown">&emsp;&emsp;&lt;ul><br/>
        <span id="brown">&lt;/div>
 				<!-- fakecode-->
 <!-- AND HERE-->
@@ -204,27 +217,9 @@ home_selected: selected
 	<div id="lightgrey"></div><!-- hr-->
 		</div><!-- wrapper-->
 		
-		<div class="wrapper">		
-			<h2>Why use Uranium?</h2>
-			  <h3>It's Lightweight</h3>
-				<p>
-				  The whole Uranium library is 8.4 KB zipped! This includes all the widgets and xui.
-        </p>
-        <p>
-          <a href="http://xuijs.com/">Xui</a> is a featherweight mobile javascript library that was used to develop Uranium.
-          Uranium is bundled with xui to make just one javascript file. This makes it perfect for
-          mobile devices, where minimizing the amount of data downloaded is key.
-          If you want it even lighter, you can make a custom build yourself.
-				</p>	
-				<h3>It's Easy to Use</h3>			
-				<p>
-          Uranium requires <i>zero</i> programming on your part. That's right: you don't need to touch
-          a single line of javascript. It uses the 'declarative' javascript style, a model that looks for how 
-          HTML elements are formatted. Then, it constructs all the necessary javascript magic to make those 
-          elements come to life.
-				</p>
+
 				
-				
+			<div class="wrapper">	
 				<div id="lightgrey"></div><!-- hr-->
 			<h2>Uranium is used by...</h2>
 			<p></p>
