@@ -499,6 +499,10 @@ body#tabs_page div[name='accordions'] *[data-ur-tabs-component='content'] {
   background-color: white;
   margin: 0px 20px; }
 
+#UniqueIDs {
+  padding: 5px;
+}
+
 body#tabs_examples_page *[data-ur-tabs-component='button'] {
   opacity: 0.5;
   background-color: #ffd700;
