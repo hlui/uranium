@@ -10,7 +10,7 @@ more_selected: selected
     As Uranium is built on xui, there are some issues with IE and BlackBerry. On the <a href="xuijs.con">xui site</a>, you need to download
     a different version depending on whether you're using IE, BlackBerry, or most other browsers. 
   </p>
-  <h2>Compatibility Table</h2>
+  <h2>Compatibility Table: Devices</h2>
   <table border="1">
     <tr id="widget_list">
       <th></th>
@@ -24,20 +24,6 @@ more_selected: selected
       <th><a href="{{site.url}}maps.html">Maps</a></th>
       <th><a href="{{site.url}}geocode.html">Geolocator</a></th>    
     </tr>
-  
-    <tr id="devices">
-      <td>Devices</td>
-      <td class="toggler"></td>
-      <td class="tabs"></td>
-      <td class="carousel"></td>
-      <td class="select_list"></td>
-      <td class="select_buttons"></td>
-      <td class="zoom_preview"></td>
-      <td class="font_resizer"></td>
-      <td class="maps"></td>
-      <td class="geocode"></td>
-    </tr>
-  
     <tr id="iOS5">
       <td>iOS5</td>
       <td class="passed toggler">P</td>
@@ -89,19 +75,21 @@ more_selected: selected
       <td class="passed maps">P</td>
       <td class="passed geocode">P</td>
     </tr>
-
-    <tr id="">
-      <td>Desktop</td>
-      <td class="toggler"></td>
-      <td class="tabs"></td>
-      <td class="carousel"></td>
-      <td class="select_list"></td>
-      <td class="select_buttons"></td>
-      <td class="zoom_preview"></td>
-      <td class="font_resizer"></td>
-      <td class="maps"></td>
-      <td class="geocode"></td>
-    </tr>
+   </table>
+   <h2>Compatibility Table: Desktop</h2>
+   <table border="1">
+     <tr id="widget_list">
+       <th></th>
+       <th><a href="{{site.url}}toggler.html">Toggler</a></th>
+       <th><a href="{{site.url}}tabs.html">Tabs</a></th>
+       <th><a href="{{site.url}}carousel.html">Carousel</a></th>
+       <th><a href="{{site.url}}select_list.html">Select List</a></th>
+       <th><a href="{{site.url}}select_buttons.html">Select Buttons</a></th>
+       <th><a href="{{site.url}}zoom_preview.html">Zoom Preview</a></th>
+       <th><a href="{{site.url}}font_resizer.html">Font Resizer</a></th>  
+       <th><a href="{{site.url}}maps.html">Maps</a></th>
+       <th><a href="{{site.url}}geocode.html">Geolocator</a></th>    
+     </tr>
   
     <tr id="chrome">
       <td>Chrome</td>
@@ -174,7 +162,7 @@ more_selected: selected
   <ul>
     <li class="passed">P - test passed </li>
     <li class="mixed">M - mixed results </li>
-    <li class="failed">P - test failed </li>
+    <li class="failed">F - test failed </li>
     <li>[blank] - not tested </li>
   </ul>
   <p>*For select list on Android LG 2.2.1, the wrong element is getting touch-highlighted</p>
