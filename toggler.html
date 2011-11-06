@@ -19,13 +19,25 @@ widget_selected: selected
   </div>
 </div>
 <div class="wrapper">
-  <h2>Components</h2>
+  <h2> data-ur-set= </h2>
+  <span class="inline_code"> "toggler" </span>
+  <h2> data-ur-component= </h2>
   <div class="components">
-    <p>Here's a list of attributes to add to HTML to make the widget work</p>
     <ul>
-      <li><span class="inline_code">data-ur-set="toggler"</span> - add this attribute to a div that wraps the whole widget</li>
-      <li><span class="inline_code">data-ur-toggler-component="button"</span> - add this attribute to the button (i.e. the thing to be clicked)</li>
-      <li><span class="inline_code">data-ur-toggler-component="content"</span> - add this attribute to all the contents</li>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"button"</span>
+        <ul data-ur-toggler-component="content">
+          <li>add this attribute to the button (i.e. the thing to be clicked)</li>
+          <li>one per page</li>
+          <li>state="disabled" or "enabled"; defaults to "disabled" on startup</li>
+        </ul>
+      </li>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+        <ul data-ur-toggler-component="content">
+          <li>add this attribute to each content item</li>
+          <li>there can be multiple items page</li>
+          <li>state="disabled" or "enabled"; defaults to "disabled" on startup</li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>
