@@ -51,32 +51,43 @@ body#carousel_examples_page div#multipane {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
+body#compatibility_page table {
+  border-collapse: collapse;
+}
+body#compatibility_page table, th, td {
+  border: 2px solid #c0c0c0;
+  shadow: none;
+}
 body#compatibility_page th {
-  background: silver; }
+  background: none; 
+  padding: 2px;}
 body#compatibility_page td {
   text-align: center;
-  background: #fafafa; }
+  background: none; 
+  color: #fafafa;
+  padding: 2px;}
 body#compatibility_page td.passed {
-  background: #c7e8ad; }
+  background: #054205; }
 body#compatibility_page td.failed {
-  background: #e8b5ad; }
+  background: #420505; }
 body#compatibility_page td.mixed {
-  background: #fbf6bb; }
+  background: #383800; }
 body#compatibility_page li {
-  color: #323232;
-  background: #fafafa;
+  color: #fafafa;
+  background: none;
   margin: 10px;
   width: 200px;
   padding: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
+  
 body#compatibility_page li.passed {
-  background: #c7e8ad; }
+  background: #054205; }
 body#compatibility_page li.failed {
-  background: #e8b5ad; }
+  background: #420505; }
 body#compatibility_page li.mixed {
-  background: #fbf6bb; }
+  background: #383800; }
   
 .attributes {
   margin-bottom: 15px;
@@ -225,6 +236,11 @@ body#geocode_page div[name='Three'] img {
   border: 2px solid black;
   padding: 10px;
   margin: 5px; }
+
+.attributes {
+  margin: 5px;
+  padding: 10px;
+}
 
 .demonstration {
   margin: 5px;
@@ -421,6 +437,10 @@ body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-lis
     padding-left: 10px;
     padding-right: 10px; }
 
+
+body#styling_page .styling_para{
+  margin-left: 25px;
+}
 body#styling_page *[data-ur-toggler-component='button'][data-ur-id='LazyPopup'] {
   border-radius: 5px;
   background: #ffd700;
