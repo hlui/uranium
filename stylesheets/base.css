@@ -77,6 +77,74 @@ body#compatibility_page li.failed {
   background: #e8b5ad; }
 body#compatibility_page li.mixed {
   background: #fbf6bb; }
+  
+.attributes {
+  margin-bottom: 15px;
+}
+.attributes h3 {
+  color: #323232; }
+.attributes *[data-ur-tabs-component="content"] li {
+  color: #323232;
+}
+.attributes .set_name {
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  display: inline-block;}
+.attributes *[data-ur-tabs-component="content"] li *[data-ur-toggler-component="content"] li [data-ur-state="enabled"]{
+  color: #323232;
+}
+.attributes *[data-ur-tabs-component='button'] {
+  opacity: 0.5;
+  background: silver url('resources/largeshade.png') no-repeat left bottom;
+  border: 1px solid black;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+  bottom: -1px;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 5px;
+  position: relative; }
+.attributes *[data-ur-tabs-component='content'] {
+  display: none;
+  background: silver; }
+.attributes *[data-ur-tabs-component='button'][data-ur-state='enabled'] {
+  opacity: 1;
+  background: #FAFAFA;
+  border-bottom: 1px solid #FAFAFA; }
+.attributes *[data-ur-tabs-component='content'][data-ur-state='enabled'] {
+  display: block;
+  background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
+  border: 1px solid black;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+.attributes *[data-ur-set="tabs"][data-ur-tab-id="html"] {
+  text-align: left; }
+.attributes #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="button"] {
+  background: silver; }
+.attributes #tab_widget *[data-ur-set="tabs"] *[data-ur-tabs-component="content"] {
+  background: silver; }
+.attributes li[data-ur-set="toggler"] {
+    padding: 10px;
+  }
+.attributes li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {
+     background: #282828;
+     padding: none;
+     border-raduis: none;}
+.attributes li[data-ur-set="toggler"] [data-ur-toggler-component='content'] {
+    display: none; }
+.attributes li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] {
+    display: block; 
+    background: none;
+    width: 100%;
+    color: #323232;}
+
+.attributes li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] li {
+  color: #323232;
+}
 
 .demonstration h3 {
   color: #323232; }
@@ -538,20 +606,8 @@ body#tabs_examples_page div[name='accordions'] *[data-ur-tabs-component='content
   background: #ffd700 url("resources/largeshade.png") no-repeat left bottom;
   margin: 0px 20px; 
   width: 300px;}
+  
 
-li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {
-   }
-li[data-ur-set="toggler"] [data-ur-toggler-component='content'] {
-  display: none; }
-li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] {
-    display: block; 
-    background: none;
-    width: 100%;
-    color: #C0C0C0;}
-    
-li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] li {
-  color: #C0C0C0;
-}
 
 body#togglers_page .accordion_demonsration *[data-ur-set="toggler"] {
   border: none;
