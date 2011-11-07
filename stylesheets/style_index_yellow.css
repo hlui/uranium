@@ -142,12 +142,12 @@ body {
 	#how_to_use li {
 	  color: #323232; font-style: italic; font-family: Rockwell; font-size: 20px;
 	}
-	#sidenote {
-	  color: #C0C0C0;
-	  text-align: right;
-	  font-size: 12px;
-	  margin-bottom: -25px;
-	}
+#sidenote {
+  color: #C0C0C0;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: -25px;
+}
 	/* Example Styles */
 	.examplewrap {
 		width: 800px; height: 240px;
