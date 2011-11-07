@@ -510,10 +510,9 @@ body#grouping_page [data-ur-toggler-component="button"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  padding: 5px;
   background: gold url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
   color: black;
-  margin: 5px;
-  padding: 5px;
   width: 300px;
   border: none; }
 body#grouping_page [data-ur-toggler-component="content"] {
@@ -522,8 +521,9 @@ body#grouping_page [data-ur-toggler-component="content"][data-ur-state="enabled"
   webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   display: block;
-  margin: 5px;
   padding: 5px;
   background: gold url("{{site.url}}resources/largeshade.png") no-repeat left bottom;
   color: black;
@@ -872,6 +872,26 @@ body#tutorial_page .tutorial_para {
   margin-left: 25px;
 }
 
+body#who_page .bio {
+  background: #323232;
+  padding: 5px;
+  margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+body#who_page img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body#who_page p {
+  color: #C0C0C0;
+}
+
 body#zoom_preview_page [data-ur-zoom-preview-component='container'] {
   width: 204px;
   height: 204px;
@@ -946,4 +966,8 @@ body#zoom_preview_examples_page .normal_image {
 .components *[data-ur-toggler-component="button"] {
   color: #323232;
   background: none;
+}
+
+body#model_page .model_para {
+  margin-left: 25px;
 }
