@@ -19,25 +19,52 @@ widget_selected: selected
 </div> <!-- wrapper -->
 
 <div class="wrapper">
-  <h2>Components</h2>
-  <div class="components">
-    <h3>Required</h3>
-    <p>
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
       <ul>
         <li><span class="inline_code">data-ur-set="select-buttons"</span> - add this attribute to a div that wraps the whole widget</li>
-        <li><span class="inline_code">data-ur-select-buttons-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
-        <li><span class="inline_code">data-ur-select-buttons-component="increment"</span> - for the increment button</li>
-        <li><span class="inline_code">data-ur-select-buttons-component="decrement"</span> - for the decrement button</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="select"</span> - add this attribute to the select tag (producing the drop-down list)</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="increment"</span> - add this attribute to the increment button</li>
+        <li><span class="inline_code">data-ur-select-buttons-component="decrement"</span> - add this attribute to the decrement button</li>
       </ul>
-    </p>
-    <h3>Optional</h3>
-    <p>
-      <ul>
-        <li><span class="inline_code">data-ur-state="disabled"</span> - add this to the decrement button </li>
-      </ul>
-    </p>
-  </div>
-</div> <!-- wrapper -->
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced" >
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"select-buttons"</div>
+      <br/>
+      <h3> data-ur-select-buttons-component= </h3>
+      <div class="components">
+        <ul>
+          <li><span data-ur-toggler-component="button" class="inline_code">"select"</span>
+            <ul data-ur-toggler-component="content">
+              <li>add this attribute to the drop-down list, which should be in a select tag</li>
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"increment"</span>
+            <ul data-ur-toggler-component="content">
+              <li>for the increment button</li>
+              <li>one per page</li>
+              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span> (has no state on start-up)</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"decrement"</span>
+            <ul data-ur-toggler-component="content">
+              <li>for the decrement button</li>
+              <li>one per page</li>
+              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span> (has no state on start-up, but it's best to set as disabled)</li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end of components -->
+    </div><!-- end of advanced_tab -->
+  </div><!-- end of attributes tabs -->
+</div><!-- end of wrapper -->
 
 <div class="wrapper">
   <h2> Demonstration </h2>
