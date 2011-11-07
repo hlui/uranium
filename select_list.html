@@ -19,6 +19,29 @@ widget_selected: selected
 </div> <!-- wrapper -->
 
 <div class="wrapper">
+  <h2> data-ur-set= </h2>
+  <span class="inline_code"> "select-list" </span>
+  <h2> data-ur-tabs-component= </h2>
+  <div class="components">
+    <ul>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"select"</span>
+        <ul data-ur-toggler-component="content">
+          <li>add this attribute to the drop-down list, which should be in a select tag</li>
+          <li>one per page</li>
+          <li>no states</li>
+        </ul>
+      </li>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+        <ul data-ur-toggler-component="content">
+          <li>the children of this element must have the same ID as the select tag's children</li>
+          <li>one per page</li>
+          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper">
   <h2>Components</h2>
   <div class="components">
     <p>Here's a list of attributes to add to HTML to make the widget work</p>

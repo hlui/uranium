@@ -15,18 +15,28 @@ widget_selected: selected
     </p>
   </div>
 </div>
-
 <div class="wrapper">
-  <h2>Components</h2>
+  <h2> data-ur-set= </h2>
+  <span class="inline_code"> "tabs" </span>
+  <h2> data-ur-tabs-component= </h2>
   <div class="components">
-    <p>Here's a list of attributes to add to HTML to make the widget work</p>
     <ul>
-      <li><span class="inline_code">data-ur-set="tabs"</span> - add this attribute to a div that wraps the whole widget</li>
-      <li><span class="inline_code">data-ur-tabs-component="button"</span> - add this attribute to the button (i.e. the thing to be clicked)</li>
-      <li><span class="inline_code">data-ur-tabs-component="content"</span> - add this attribute to all the contents</li>
-      <li><span class="inline_code">data-ur-tab-id="NAME"</span> - give matching IDs to button and the content to be toggled</li>
-      <li><span class="inline_code">data-ur-state="enabled"</span> -  assign this attribute to the button and content that will be activated 
-        when the page loads</li>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"button"</span>
+        <ul data-ur-toggler-component="content">
+          <li>add this attribute to the button (i.e. the thing to be clicked)</li>
+          <li>there can be multiple buttons per page</li>
+          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+          <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
+        </ul>
+      </li>
+      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+        <ul data-ur-toggler-component="content">
+          <li>add this attribute to each content item</li>
+          <li>there can be multiple items page</li>
+          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+          <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>
