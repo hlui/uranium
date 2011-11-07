@@ -86,6 +86,10 @@ body#compatibility_page li.mixed {
 .attributes *[data-ur-tabs-component="content"] li {
   color: #323232;
 }
+.attributes .inline_code {
+  background: none;
+  color: #323232;
+}
 .attributes .set_name {
   padding: 5px;
   -webkit-border-radius: 5px;
@@ -131,7 +135,8 @@ body#compatibility_page li.mixed {
     padding: 10px;
   }
 .attributes li[data-ur-set="toggler"] [data-ur-toggler-component='button'] {
-     background: #282828;
+     background: none;
+     color: #323232;;
      padding: none;
      border-raduis: none;}
 .attributes li[data-ur-set="toggler"] [data-ur-toggler-component='content'] {
@@ -913,9 +918,9 @@ body#zoom_preview_examples_page .normal_image {
     height: 200px; }
 
 .components li {
-  color: #C0C0C0;
+  color: #323232;
 }
 .components *[data-ur-toggler-component="button"] {
-  color: #C0C0C0;
+  color: #323232;
   background: none;
 }

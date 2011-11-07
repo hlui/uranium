@@ -19,6 +19,64 @@ widget_selected: selected
 </div> <!-- wrapper -->
 
 <div class="wrapper">
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
+      <ul>
+        <li><span class="inline_code">data-ur-set="select-list"</span> - add this attribute to a div that wraps the whole widget</li>
+        <li><span class="inline_code">data-ur-select-list-component="select"</span> - add this attribute to the select tag (producing the drop-down list)</li>
+        <li><span class="inline_code">data-ur-select-list-component="content"</span> - add this attribute to the content</li>
+        <li>each child item in the select list should have a matching value to an item in the content</li>
+      </ul>
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced" >
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"select-list"</div>
+      <br/>
+      <h3> data-ur-select-list-component= </h3>
+      <div class="components">
+        <ul>
+          <li><span data-ur-toggler-component="button" class="inline_code">"select"</span>
+            <ul data-ur-toggler-component="content">
+              <li>add this attribute to the drop-down list, which should be in a select tag</li>
+              <li>one per page</li>
+              <li>no states</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+            <ul data-ur-toggler-component="content">
+              <li>the children of this element must have the same ID as the select tag's children</li>
+              <li>one per page</li>
+              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end of components -->
+    </div><!-- end of advanced_tab -->
+  </div><!-- end of attributes tabs -->
+</div><!-- end of wrapper -->
+
+
+<!--<div class="wrapper">
+      <h2>Components</h2>
+      <div class="components">
+        <p>Here's a list of attributes to add to HTML to make the widget work</p>
+        <ul>
+          <li><span class="inline_code">data-ur-set="select-list"</span> - add this attribute to a div that wraps the whole widget</li>
+          <li><span class="inline_code">data-ur-select-list-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
+          <li><span class="inline_code">data-ur-select-list-component="content"</span> - this should be applied to the list of items that will appear <i>outside</i> the drop-down; each should have a value corresponding to a value on one of the option tags in the select list.</li>
+        </ul>
+      </div>
+    </div>
+  </div> <!- tabs widget ->
+</div><! wrapper ->
+
+
+<div class="wrapper">
   <h2> data-ur-set= </h2>
   <span class="inline_code"> "select-list" </span>
   <h2> data-ur-tabs-component= </h2>
@@ -40,7 +98,7 @@ widget_selected: selected
       </li>
     </ul>
   </div>
-</div>
+</div><!- end of wrapper->
 <div class="wrapper">
   <h2>Components</h2>
   <div class="components">
@@ -51,7 +109,7 @@ widget_selected: selected
       <li><span class="inline_code">data-ur-select-list-component="content"</span> - this should be applied to the list of items that will appear <i>outside</i> the drop-down; each should have a value corresponding to a value on one of the option tags in the select list.</li>
     </ul>
   </div>
-</div> <!-- wrapper -->
+</div> -->
 
 <div class="wrapper">
   <h2>Demonstration</h2>

@@ -15,7 +15,53 @@ widget_selected: selected
     </p>
   </div>
 </div>
+
 <div class="wrapper">
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
+      <ul>
+        <li><span class="inline_code">data-ur-set="tabs"</span> - add this attribute to a div that wraps the whole widget</li>
+        <li><span class="inline_code">data-ur-tabs-component="button"</span> - add this attribute to the button div</li>
+        <li><span class="inline_code">data-ur-tabs-component="content"</span> - add this attribute to the content</li>
+        <li><span class="inline_code">data-ur-tab-id="NAME"</span> - this attribute needs to link the button and the content (i.e. the button and content should have the same id)</li>
+      </ul>
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced">
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"tabs"</div>
+      <br/>
+      <h3> data-ur-tabs-component= </h3>
+      <div class="components">
+        <ul>
+          <li><span data-ur-toggler-component="button" class="inline_code">"button"</span>
+            <ul data-ur-toggler-component="content">
+              <li>add this attribute to the button (i.e. the thing to be clicked)</li>
+              <li>there can be multiple buttons per page</li>
+              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+              <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+            <ul data-ur-toggler-component="content">
+              <li>add this attribute to each content item</li>
+              <li>there can be multiple items page</li>
+              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+              <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- advanced tab-->
+  </div> <!-- tabs widget -->
+</div><!-- wrapper -->
+
+
+<!--<div class="wrapper">
   <h2> data-ur-set= </h2>
   <span class="inline_code"> "tabs" </span>
   <h2> data-ur-tabs-component= </h2>
@@ -39,7 +85,7 @@ widget_selected: selected
       </li>
     </ul>
   </div>
-</div>
+</div>-->
 
 <div class="wrapper">
   <h2>Demonstration</h2>
