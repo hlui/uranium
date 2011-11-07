@@ -10,10 +10,7 @@ widget_selected: selected
 <h2> Description </h2>
   <div class="description">
     <p> 
-      This widget allows you to reverse geocode a location. You can use this to populate forms using the user's location. 
-    </p>
-    <p>
-      You may only use one of these widgets on a page, along with only one element per form. The elements you can populate are: 
+      This widget allows you to reverse geocode a location. You can use this to populate forms using the user's location. The elements you can populate are: 
       <ul>
         <li>Street Address (only line 1, floor level is not present in the api)</li>
         <li>City</li>
@@ -23,43 +20,80 @@ widget_selected: selected
       </ul>
     </p>
     <p>
-      The widget supports the use of either select elements or text input elements and should handle either gracefully. It will not support other types of elements.
-    </p>
-    <p>
-      The widget will fire on load if no button is present to activate the widget. If you include a button (see <a href="{{site.url}}geocode_button.html">here</a>) then the widget will only activate when clicked. 
-    </p>
-    <p>
       Some browsers (as for <a href="{{site.url}}maps.html">maps</a>) won't do this locally, so use dropbox
       for testing. Also, it's important to ensure that location services are enabled on the device and/or browser.
     </p>
   
   </div>
 </div> <!-- wrapper -->
+
 <div class="wrapper">
-  <h2>Components</h2>
-  <div class="components">
-    <h3>Required</h3>
-    <p>Here's a list of attributes to add to HTML to make the widget work</p>
-    <ul>
-      <li><span class="inline_code">data-ur-set="reverse-geocode"</span> - add this attribute to a div that wraps the whole widget</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-street"</span> - for the street field</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-city"</span> - for the city field</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-zip"</span> - for the zip code field</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-state"</span> - for the state field</li>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-country"</span> - for the country field</li>
-    </ul>
-    <h3>Optional</h3>
-    <ul>
-      <li><span class="inline_code">data-ur-reverse-geocode-component="rg-button"</span> - </li>
-    </ul>
-    <p>
-      As you see in the HTML from the example below, a few other non-Uranium elements
-      are necessary to get this widget to work. These are all based around forms. For example,
-      we need a form tag to wrap the widget, with <span class="inline_code">action="geocode_submit"</span>
-      as an attribute.
-    </p>
-  </div><!-- components -->
-</div> <!-- wrapper -->
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
+      <ul>
+        <ul>
+          <li><span class="inline_code">data-ur-set="reverse-geocode"</span> - add this attribute to a div that wraps the whole widget</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-street"</span> - for the street field</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-city"</span> - for the city field</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-zip"</span> - for the zip code field</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-state"</span> - for the state field</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-country"</span> - for the country field</li>
+          <li><span class="inline_code">data-ur-reverse-geocode-component="rg-button"</span> - to wrap a "use my location" button</li>
+          <li>As you see in the HTML from the example below, a few other non-Uranium elements are necessary to get this widget to work. These are all based around forms. For example, we need a form tag to wrap the widget, with action="geocode_submit" as an attribute.</li>
+        </ul>
+      </ul>
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced" >
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"reverse-geocode"</div>
+      <br/>
+      <h3> data-ur-reverse-geocode-component= </h3>
+      <div class="components">
+        <ul>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-button"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+              <li>if not included, the widget will fire when the page is loaded</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-street"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-city"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-state"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+              <li>can use a select tag or a text-input field</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-zip"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"rg-country"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+              <li>can use a select tag or a text-input field</li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end of components -->
+    </div><!-- end of advanced_tab -->
+  </div><!-- end of attributes tabs -->
+</div><!-- end of wrapper -->
+
 <div class="wrapper">
   <h2>Demonstration</h2>
 

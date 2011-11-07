@@ -21,19 +21,77 @@ widget_selected: selected
   to play with these features.</p>
   </div>
 </div>
+
 <div class="wrapper">
-<h2>Components</h2>
-  <div class="components">
-    <p>
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
       <ul>
         <li><span class="inline_code">data-ur-set="maps"</span> - add this attribute to a div that wraps the whole widget</li>
         <li><span class="inline_code">data-ur-map-component="canvas"</span> - sets the map canvas</li>
         <li><span class="inline_code">data-ur-map-component="address"</span> - defines the address for a map point</li>
         <li><span class="inline_code">data-ur-map-component="description"</span> - defines a description for the address</li>
       </ul>
-    </p>
-  </div>
-</div>
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced" >
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"select-list"</div>
+      <br/>
+      <h3> data-ur-map-component= </h3>
+      <div class="components">
+        <h4> Required </h4>
+        <p>
+          <ul>
+            <li><span class="inline_code">"address"</span>
+              <ul>
+                <li>wraps an address for a point on a map</li>
+                <li>can be multiple per page</li>
+              </ul>
+            </li>
+            <li><span class="inline_code">"description"</span>
+              <ul>
+                <li>describes the point on a map</li>
+                <li>can be multiple per page</li>
+              </ul>
+            </li>
+            <li><span class="inline_code">"canvas"</span>
+              <ul>
+                <li>where the map is placed</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <h4> Optional </h4>
+        <p>
+          <ul>
+            <li><span class="inline_code">"icon"</span>
+              <ul>
+                <li>allows you to change the pin icon</li>
+                <li>one per page</li>
+                <li>attributes
+                  <ul>
+                    <li>required: <span class="inline_code">data-ur-width</span></li>
+                    <li>required: <span class="inline_code">data-ur-height</span></li>
+                    <li>required: <span class="inline_code">data-ur-url</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="inline_code">"user_location"</span>
+              <ul>
+                <li>should wrap a "use my location" button</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+      </div> <!-- components -->
+    </div><!-- end of advanced_tab -->
+  </div><!-- end of attributes tabs -->
+</div><!-- end of wrapper -->
 
 <div class="wrapper">
   <h2>Demonstration</h2>

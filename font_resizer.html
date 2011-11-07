@@ -18,30 +18,65 @@ widget_selected: selected
 </div> <!-- wrapper-->
 
 <div class="wrapper">
-  <h2>Components</h2>
-  <div class="options">
-    <h3> Required </h3>
-    <p>
-      <span class="inline_code">data-ur-font-resizer-component= 
-      <ul>
-        <li><span class="inline_code">"increase"</span> - this is used to mark the increase button (e.g. [+]).</li>
-        <li><span class="inline_code">"label"</span> - this indicates the text size.</li>
-        <li><span class="inline_code">"decrease"</span> - this is used to mark the decrease button (e.g. [-]). </li>
-        <li><span class="inline_code">"content"</span> - this marks the content.</li>
-      </ul>
-    </p>
-    <h3> Optional </h3>
-    <p>It's also possible to override the default maximum, minimum, and initial sizes,
-      as well as how much the size will change on each increment, by adding the following extra attributes
-      to the content element:</p>
-    <ul>
-      <li><span class="inline_code">data-ur-font-resizer-min</span> - defaults to "100"</li>
-      <li><span class="inline_code">data-ur-font-resizer-max</span> - defaults to "200"</li>
-      <li><span class="inline_code">data-ur-font-resizer-size</span> - defaults to min</li>
-      <li><span class="inline_code">data-ur-font-resizer-delta</span> - defaults to "20"</li>
-    </ul>
-  </div>
-</div><!-- wrapper -->
+  <h2> Attributes </h2>
+  <div data-ur-set="tabs" class="attributes">
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="basic" data-ur-state='enabled'>Basic</h3>
+
+    <h3 data-ur-tabs-component='button' data-ur-tab-id="advanced">Advanced</h3>
+
+    <div class="basic_tab"  data-ur-tabs-component="content" data-ur-tab-id="basic" data-ur-state='enabled'>
+      <p>
+        <ul>
+          <li><span class="inline_code">data-ur-font-resizer-component="increase"</span> - this is used to mark the increase button (e.g. [+])</li>
+          <li><span class="inline_code">data-ur-font-resizer-component="label"</span> - this indicates the text size</li>
+          <li><span class="inline_code">data-ur-font-resizer-component="decrease"</span> - this is used to mark the decrease button (e.g. [-]) </li>
+          <li><span class="inline_code">data-ur-font-resizer-component="content"</span> - this marks the content</li>
+        </ul>
+      </p>
+    </div><!-- basic -->
+    <div class="advanced_tab" data-ur-tabs-component="content" data-ur-tab-id="advanced" >
+      <h3> data-ur-set= </h3>
+      <div class="set_name inline_code">"font-resizer"</div>
+      <br/>
+      <h3> data-ur-font-resizer-component= </h3>
+      <div class="components">
+        <h4>Required</h4>
+        <ul>
+          <li><span data-ur-toggler-component="button" class="inline_code">"increase"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"decrease"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"label"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+            </ul>
+          </li>
+          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+            <ul data-ur-toggler-component="content">
+              <li>one per page</li>
+              <li>attributes
+                <ul>
+                  <li>optional: <span class="inline_code">data-ur-font-resizer-min</span> - defaults to "100"</li>
+                  <li>optional: <span class="inline_code">data-ur-font-resizer-max</span> - defaults to "200"</li>
+                  <li>optional: <span class="inline_code">data-ur-font-resizer-size</span> - defaults to min</li>
+                  <li>optional: <span class="inline_code">data-ur-font-resizer-delta</span> - defaults to "20"</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div><!-- end of components -->
+    </div><!-- end of advanced_tab -->
+  </div><!-- end of attributes tabs -->
+</div><!-- end of wrapper -->
+
 
 <div class="wrapper">
   <h2>Demonstration</h2>
