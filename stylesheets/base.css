@@ -150,6 +150,9 @@ body#compatibility_page li.mixed {
 .attributes li[data-ur-set="toggler"] [data-ur-toggler-component='content'][data-ur-state="enabled"] li {
   color: #323232;
 }
+.attributes p.instance {
+  color: #323232;
+}
 
 .demonstration h3 {
   color: #323232; }
