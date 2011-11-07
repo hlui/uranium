@@ -38,20 +38,28 @@ widget_selected: selected
       <h3> data-ur-tabs-component= </h3>
       <div class="components">
         <ul>
-          <li><span data-ur-toggler-component="button" class="inline_code">"button"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"button"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to the button (i.e. the thing to be clicked)</li>
-              <li>there can be multiple buttons per page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
-              <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
+              <li>multiple?: true</li>
+              <li>state: enabled / disabled(default)</li>
+              <li>attributes
+                <ul>
+                  <li>required: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
+                </ul>
+              </li>
             </ul>
           </li>
-          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"content"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to each content item</li>
-              <li>there can be multiple items page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
-              <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
+              <li>multiple?: true</li>
+              <li>state: enabled / disabled(default)</li>
+              <li>attributes
+                <ul>
+                  <li>required: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
@@ -62,33 +70,6 @@ widget_selected: selected
     </div> <!-- advanced tab-->
   </div> <!-- tabs widget -->
 </div><!-- wrapper -->
-
-
-<!--<div class="wrapper">
-  <h2> data-ur-set= </h2>
-  <span class="inline_code"> "tabs" </span>
-  <h2> data-ur-tabs-component= </h2>
-  <div class="components">
-    <ul>
-      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"button"</span>
-        <ul data-ur-toggler-component="content">
-          <li>add this attribute to the button (i.e. the thing to be clicked)</li>
-          <li>there can be multiple buttons per page</li>
-          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
-          <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
-        </ul>
-      </li>
-      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"content"</span>
-        <ul data-ur-toggler-component="content">
-          <li>add this attribute to each content item</li>
-          <li>there can be multiple items page</li>
-          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
-          <li>attributes: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>-->
 
 <div class="wrapper">
   <h2>Demonstration</h2>

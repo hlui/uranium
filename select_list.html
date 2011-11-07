@@ -40,18 +40,18 @@ widget_selected: selected
       <h3> data-ur-select-list-component= </h3>
       <div class="components">
         <ul>
-          <li><span data-ur-toggler-component="button" class="inline_code">"select"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"select"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to the drop-down list, which should be in a select tag</li>
-              <li>one per page</li>
-              <li>no states</li>
+              <li>multiple?: false</li>
+              <li>state: N/A</li>
             </ul>
           </li>
-          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"content"</div>
             <ul data-ur-toggler-component="content">
               <li>the children of this element must have the same ID as the select tag's children</li>
-              <li>one per page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
+              <li>multiple?: false</li>
+              <li>state: enabled / disabled(default)</li>
             </ul>
           </li>
         </ul>
@@ -59,57 +59,6 @@ widget_selected: selected
     </div><!-- end of advanced_tab -->
   </div><!-- end of attributes tabs -->
 </div><!-- end of wrapper -->
-
-
-<!--<div class="wrapper">
-      <h2>Components</h2>
-      <div class="components">
-        <p>Here's a list of attributes to add to HTML to make the widget work</p>
-        <ul>
-          <li><span class="inline_code">data-ur-set="select-list"</span> - add this attribute to a div that wraps the whole widget</li>
-          <li><span class="inline_code">data-ur-select-list-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
-          <li><span class="inline_code">data-ur-select-list-component="content"</span> - this should be applied to the list of items that will appear <i>outside</i> the drop-down; each should have a value corresponding to a value on one of the option tags in the select list.</li>
-        </ul>
-      </div>
-    </div>
-  </div> <!- tabs widget ->
-</div><! wrapper ->
-
-
-<div class="wrapper">
-  <h2> data-ur-set= </h2>
-  <span class="inline_code"> "select-list" </span>
-  <h2> data-ur-tabs-component= </h2>
-  <div class="components">
-    <ul>
-      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"select"</span>
-        <ul data-ur-toggler-component="content">
-          <li>add this attribute to the drop-down list, which should be in a select tag</li>
-          <li>one per page</li>
-          <li>no states</li>
-        </ul>
-      </li>
-      <li data-ur-set="toggler"><span data-ur-toggler-component="button" class="inline_code">"content"</span>
-        <ul data-ur-toggler-component="content">
-          <li>the children of this element must have the same ID as the select tag's children</li>
-          <li>one per page</li>
-          <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to "disabled" on startup</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div><!- end of wrapper->
-<div class="wrapper">
-  <h2>Components</h2>
-  <div class="components">
-    <p>Here's a list of attributes to add to HTML to make the widget work</p>
-    <ul>
-      <li><span class="inline_code">data-ur-set="select-list"</span> - add this attribute to a div that wraps the whole widget</li>
-      <li><span class="inline_code">data-ur-select-list-component="select"</span> - this attribute should be applied to the <span class="inline_code">select</span> tag, which contains the option tags and produces the drop-down menu</li>
-      <li><span class="inline_code">data-ur-select-list-component="content"</span> - this should be applied to the list of items that will appear <i>outside</i> the drop-down; each should have a value corresponding to a value on one of the option tags in the select list.</li>
-    </ul>
-  </div>
-</div> -->
 
 <div class="wrapper">
   <h2>Demonstration</h2>

@@ -39,18 +39,18 @@ widget_selected: selected
       <h3> data-ur-toggler-component= </h3>
       <div class="components">
         <ul>
-          <li><span data-ur-toggler-component="button" class="inline_code">"button"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"button"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to the button (i.e. the thing to be clicked)</li>
-              <li>one per page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to <span class="inline_code">"disabled"</span> on startup</li>
+              <li>multiple?: false</li>
+              <li>state: enabled / disabled(default)</li>
             </ul>
           </li>
-          <li><span data-ur-toggler-component="button" class="inline_code">"content"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"content"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to each content item</li>
-              <li>there can be multiple items page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span>; defaults to <span class="inline_code">"disabled"</span> on startup</li>
+              <li>multiple?: true</li>
+              <li>state: enabled / disabled(default)</li>
             </ul>
           </li>
         </ul>

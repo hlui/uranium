@@ -46,21 +46,22 @@ widget_selected: selected
         <h4> Required </h4>
         <p>
           <ul>
-            <li><span class="inline_code">"address"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"address"</div>
               <ul>
                 <li>wraps an address for a point on a map</li>
-                <li>can be multiple per page</li>
+                <li>multiple?: true</li>
               </ul>
             </li>
-            <li><span class="inline_code">"description"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"description"</div>
               <ul>
                 <li>describes the point on a map</li>
-                <li>can be multiple per page</li>
+                <li>multiple?: true</li>
               </ul>
             </li>
-            <li><span class="inline_code">"canvas"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"canvas"</div>
               <ul>
                 <li>where the map is placed</li>
+                <li>multiple?: false</li>
               </ul>
             </li>
           </ul>
@@ -68,10 +69,10 @@ widget_selected: selected
         <h4> Optional </h4>
         <p>
           <ul>
-            <li><span class="inline_code">"icon"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"icon"</div>
               <ul>
                 <li>allows you to change the pin icon</li>
-                <li>one per page</li>
+                <li>multiple?: false</li>
                 <li>attributes
                   <ul>
                     <li>required: <span class="inline_code">data-ur-width</span></li>
@@ -81,9 +82,10 @@ widget_selected: selected
                 </li>
               </ul>
             </li>
-            <li><span class="inline_code">"user_location"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"user_location"</div>
               <ul>
                 <li>should wrap a "use my location" button</li>
+                <li>state: enabled / disabled(default)</li>
               </ul>
             </li>
           </ul>

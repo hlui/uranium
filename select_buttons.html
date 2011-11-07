@@ -40,24 +40,25 @@ widget_selected: selected
       <h3> data-ur-select-buttons-component= </h3>
       <div class="components">
         <ul>
-          <li><span data-ur-toggler-component="button" class="inline_code">"select"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"select"</div>
             <ul data-ur-toggler-component="content">
               <li>add this attribute to the drop-down list, which should be in a select tag</li>
-              <li>one per page</li>
+              <li>multiple?: false</li>
+              <li>state: N/A</li>
             </ul>
           </li>
-          <li><span data-ur-toggler-component="button" class="inline_code">"increment"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"increment"</div>
             <ul data-ur-toggler-component="content">
               <li>for the increment button</li>
-              <li>one per page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span> (has no state on start-up)</li>
+              <li>multiple?: false</li>
+              <li>state: enabled / disabled (default is no state)</li>
             </ul>
           </li>
-          <li><span data-ur-toggler-component="button" class="inline_code">"decrement"</span>
+          <li><div data-ur-toggler-component="button" class="inline_code">"decrement"</div>
             <ul data-ur-toggler-component="content">
               <li>for the decrement button</li>
-              <li>one per page</li>
-              <li><span class="inline_code">state="disabled"</span> or <span class="inline_code">"enabled"</span> (has no state on start-up, but it's best to set as disabled)</li>
+              <li>multiple?: false</li>
+              <li>state: enabled / disabled (default is no state; you should set to disabled)</li>
             </ul>
           </li>
         </ul>

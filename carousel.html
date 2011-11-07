@@ -44,15 +44,16 @@ widget_selected: selected
       <h3> data-ur-set= </h3>
       <div class="set_name inline_code">"carousel"</div>
       <br/>
-      <h3> data-ur-component= </h3>
+      <h3> data-ur-carousel-component= </h3>
       <div class="components">
         <h4> Required </h4>
         <p>
           <ul>
-            <li><span class="inline_code">"view_container"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"view_container"</div>
               <ul>
                 <li>this div should wrap the whole carousel; it must be set to no overflow.</li>
-                <li>only one per page</li>
+                <li>multiple?: false</li>
+                <li>state: N/A</li>
                 <li>attributes
                   <ul>
                     <li>required: <span class="inline_code">data-ur-tab-id</span>: must match corresponding attr on button element</li>
@@ -62,16 +63,18 @@ widget_selected: selected
                 </li>
               </ul>
             </li>
-            <li><span class="inline_code">"scroll_container"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"scroll_container"</div>
               <ul>
                 <li>this div should wrap the scrolling items on the carousel</li>
-                <li>only one per page</li>
+                <li>multiple?: false</li>
+                <li>state: N/A</li>
               </ul>
             </li>
-            <li><span class="inline_code">"item"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"item"</div>
               <ul>
                 <li>this attribute is for each item that needs to be displayed in the carousel</li>
-                <li>can be multiple items per page</li>
+                <li>multiple?: true</li>
+                <li>state: active / inactive (reflects currently visible item)</li>
                 <li>must have <span class="inline_code">float:left</span> and <span class="inline_code">display:inline</span> styles</li>
               </ul>
             </li>
@@ -80,10 +83,11 @@ widget_selected: selected
         <h4> Optional </h4>
         <p>
           <ul>
-            <li><span class="inline_code">"button"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"button"</div>
               <ul>
                 <li>indicates the previous and next buttons</li>
-                <li>two per page</li>
+                <li>multiple?: true</li>
+                <li>state: enabled / disabled ('next' defaults to enabled / 'prev' defaults to 'disabled')</li>
                 <li>attributes
                   <ul>
                     <li>required: <span class="inline_code">data-ur-carousel-button-type:"next"/"prev"</span> for the next and previous buttons, respectively</li>
@@ -91,9 +95,11 @@ widget_selected: selected
                 </li>
               </ul>
             </li>
-            <li><span class="inline_code">"count"</span>
+            <li><div data-ur-toggler-component="button" class="inline_code">"count"</div>
               <ul>
                 <li>gives an indicator of the position of the carousel, in the form "1 of 8", etc.</li>
+                <li>multiple?: false</li>
+                <li>state: N/A</li>
               </ul>
             </li>
           </ul>
@@ -176,16 +182,15 @@ widget_selected: selected
       
       <div class="widget_html" data-ur-tabs-component="content" data-ur-tab-id="CSS">
         <p class="code">
-            <span id="brown">div[data-ur-carousel-component='view_container'] {</br>
-              <span id="brown">&emsp;&emsp;height: 270px;</br>
+            <span id="brown">div[<span id="green">data-ur-carousel-component='view_container'<span id="brown">] {</br>
               <span id="brown">&emsp;&emsp;width: 100%;</br>
               <span id="brown">&emsp;&emsp;overflow-x: hidden; }</br>
-            <span id="brown">div[data-ur-carousel-component="scroll_container"] {</br>
+            <span id="brown">div[<span id="green">data-ur-carousel-component="scroll_container"<span id="brown">] {</br>
               <span id="brown">&emsp;&emsp;display: block; }</br>
-            <span id="brown">div[data-ur-carousel-component="scroll_container"] > * {</br>
+            <span id="brown">div[<span id="green">data-ur-carousel-component="scroll_container"<span id="brown">] > * {</br>
               <span id="brown">&emsp;&emsp;display: inline-block;</br>
               <span id="brown">&emsp;&emsp;float: left; }</br>
-            <span id="brown">div[data-ur-carousel-component="button"][data-ur-state="disabled"] {</br>
+            <span id="brown">div[<span id="green">data-ur-carousel-component="button"][data-ur-state="disabled"<span id="brown">] {</br>
               <span id="brown">&emsp;&emsp;opacity: 0.3; }</br>
         </p>
       </div><!-- closing CSS tab -->
