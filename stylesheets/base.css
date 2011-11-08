@@ -389,6 +389,13 @@ body#late_load_map_page *[data-ur-set="map"] {
   color: black; 
   width: 300px;}
 
+  body#font_resizer_page *[data-ur-tabs-component="content"][data-ur-state="disabled"] {
+    display: none;
+  }
+  body#font_resizer_page *[data-ur-tabs-component="content"][data-ur-state="enabled"] {
+    display: block;
+  }
+
 body#font_resizer_page p[data-ur-font-resizer-component="content"] {
   color: black; }
 
@@ -419,6 +426,13 @@ body#select_buttons_page [data-ur-select-buttons-component='decrement'] {
   margin-left: 35px;}
 body#select_buttons_page [data-ur-select-buttons-component][data-ur-state='disabled'] {
   opacity: 0.5; }
+body#select_buttons_page *[data-ur-tabs-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+body#select_buttons_page *[data-ur-tabs-component="content"][data-ur-state="enabled"] {
+  display: block;
+}
+
 
 body#select_list_page .demonstration #select_list_demonstration *[data-ur-set="select-list"] {
   width: 230px;
