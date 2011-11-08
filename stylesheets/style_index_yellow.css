@@ -298,7 +298,7 @@ body {
             }
           div[data-ur-carousel-component="scroll_container"] {
             display: block; 
-            width: 3000px;}
+            width: 4000px;}
           div[data-ur-carousel-component="scroll_container"] > * {
               display: inline-block;
               float: left; }
