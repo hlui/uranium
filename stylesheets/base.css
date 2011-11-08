@@ -437,6 +437,12 @@ body#select_list_page .demonstration #select_list_demonstration *[data-ur-set="s
     font-size: 18px;
     font-family: Rockwell;
     text-align: center; }
+body#select_list_page *[data-ur-tabs-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+body#select_list_page *[data-ur-tabs-component="content"][data-ur-state="enabled"] {
+  display: block;
+}
 
 body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-list-component="content"] {
   color: #fafafa;
