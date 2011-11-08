@@ -598,6 +598,42 @@ body#tabs_page div[name='accordions'] *[data-ur-tabs-component='content'] {
   background-color: white;
   margin: 0px 20px; }
 
+
+body#tabs_page *[data-ur-tab-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+body#tabs_page *[data-ur-toggler-component="content"][data-ur-state="enabled"] {
+  display: block;
+}
+
+
+body#tabsgrand_page #babutton {
+		width: 98px; height: 25px; padding-top: 6px;
+		font-size: 15px; text-align: center;
+		float: right;
+		display: block;
+		border-left: 1.5px solid rgb(80,80,80); border-right: 1.5px solid rgb(0,0,0);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+body#tabsgrand_page #babutton[data-ur-tab-id="advancedpage"]{
+  margin-right: 100px;
+}
+body#tabsgrand_page #babutton[data-ur-state="disabled"]{
+  background: none;
+  color: #C0C0C0;
+}
+body#tabsgrand_page #babutton[data-ur-state="enabled"]{
+  color: #323232;
+	background: #FFD700;
+}
+body#tabsgrand_page *[data-ur-tabs-component="content"][data-ur-state="disabled"] {
+  display: none;
+}
+body#tabsgrand_page *[data-ur-tabs-component="content"][data-ur-state="enabled"] {
+  display: block;
+}
 #UniqueIDs {
   padding: 5px;
 }
