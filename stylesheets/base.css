@@ -1097,3 +1097,18 @@ body#tabs_page *[data-ur-tabs-component="button"]#babutton[data-ur-tab-id="advan
   margin-top:0px;
   margin-bottom:0px;
 }
+
+
+body#download_page #version {
+  width: 100px;
+  background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #323232;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
