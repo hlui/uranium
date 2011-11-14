@@ -2,4 +2,4 @@
 BUILD_VERSION
 JENKINS
 doc/*.html
-.rvmrc
+.rvmrc_site
