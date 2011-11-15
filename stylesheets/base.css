@@ -1100,7 +1100,7 @@ body#tabs_page *[data-ur-tabs-component="button"]#babutton[data-ur-tab-id="advan
 
 
 body#download_page #version {
-  width: 100px;
+  width: 70px;
   background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
   padding: 6px;
   padding-left: 10px;
@@ -1111,4 +1111,41 @@ body#download_page #version {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  color: #323232;
+  font-style: italic;
+  font-family: Rockwell;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+body#download_page #left_dl {
+  float: left;
+}
+body#download_page #right_dl {
+  float: right;
+  margin-left: 30px;
+}
+body#download_page #center_dl {
+  float: right;
+}
+body#download_page #links {
+  width: 600px;
+  margin: auto;
+}
+body#download_page .download_link {
+  width: 160px;
+  background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #323232;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+body#download_page .download_link h4 {
+  font-size: 1.9em;
 }
