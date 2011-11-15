@@ -59,6 +59,7 @@ body#carousel_examples_page div#multipane {
 
 body#compatibility_page table {
   border-collapse: collapse;
+  margin-top: 20px;
 }
 body#compatibility_page table, th, td {
   border: 2px solid #c0c0c0;
@@ -1100,13 +1101,12 @@ body#tabs_page *[data-ur-tabs-component="button"]#babutton[data-ur-tab-id="advan
 
 
 body#download_page #version {
-  width: 70px;
+  width: auto;
+  float: right;
   background: #FAFAFA url('resources/largeshade.png') no-repeat left bottom;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: #323232;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1117,7 +1117,10 @@ body#download_page #version {
   text-align: center;
   font-size: 1.3em;
 }
-
+body#download_page #download_spiel {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 body#download_page #left_dl {
   float: left;
 }
@@ -1148,4 +1151,7 @@ body#download_page .download_link {
 }
 body#download_page .download_link h4 {
   font-size: 1.9em;
+}
+body#download_page #links a:hover {
+  text-decoration: none;
 }
