@@ -15,6 +15,7 @@ body#carousel_page div[data-ur-carousel-component="scroll_container"] {
     float: left; }
 body#carousel_page div[data-ur-carousel-component="button"] {
   display: inline-block; }
+
   body#carousel_page div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
     opacity: 0.3; }
 body#carousel_page div[name='Three'] img {
@@ -228,6 +229,7 @@ body#geocode_page div[data-ur-carousel-component="scroll_container"] {
   body#geocode_page div[data-ur-carousel-component="scroll_container"] > * {
     display: inline-block;
     float: left; }
+
 body#geocode_page div[data-ur-carousel-component="button"] {
   display: inline-block; }
   body#geocode_page div[data-ur-carousel-component="button"][data-ur-state="disabled"] {
@@ -439,7 +441,6 @@ body#select_buttons_page *[data-ur-tabs-component="content"][data-ur-state="enab
   display: block;
 }
 
-
 body#select_list_page .demonstration #select_list_demonstration *[data-ur-set="select-list"] {
   width: 230px;
   height: 150px;
@@ -463,6 +464,7 @@ body#select_list_page *[data-ur-tabs-component="content"][data-ur-state="disable
 body#select_list_page *[data-ur-tabs-component="content"][data-ur-state="enabled"] {
   display: block;
 }
+
 
 body#select_list_examples_page [data-ur-id="MyUIDSelectList"][data-ur-select-list-component="content"] {
   color: #fafafa;
@@ -646,7 +648,7 @@ body#tabs_page *[data-ur-toggler-component="content"][data-ur-state="enabled"] {
 		width: 98px; height: 25px; padding-top: 6px;
 		font-size: 15px; text-align: center;
 		float: right;
-		display: block;
+		display: inline-block;
 		border-left: 1.5px solid rgb(80,80,80); border-right: 1.5px solid rgb(0,0,0);
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
