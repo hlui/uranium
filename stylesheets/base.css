@@ -853,10 +853,13 @@ body#togglers_examples_page *[data-ur-toggler-component='content'] {
     background: #fafafa; }
     body#togglers_examples_page *[data-ur-toggler-component='content'] li[data-ur-set="toggler"] [data-ur-toggler-component="button"] {
       background: #fafafa;
-      padding-top: 0px; }
+      padding-top: 0px; 
+      padding-bottom: 0px;}
     body#togglers_examples_page *[data-ur-toggler-component='content'] li[data-ur-set="toggler"] [data-ur-toggler-component="content"][data-ur-state="enabled"] {
       background: #fafafa;
-      width: 100px; }
+      width: 100px;
+      margin-top: 0px; 
+      padding-bottom: 10px;}
 body#togglers_examples_page *[data-ur-toggler-component='button'][data-ur-state='enabled'] {
   opacity: 1; }
 body#togglers_examples_page *[data-ur-toggler-component='content'][data-ur-state='enabled'] {
