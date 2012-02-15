@@ -49,41 +49,42 @@ widget_selected: selected
               <ul data-ur-toggler-component="content">
                 <li>add this attribute to the table (the tag &lt;table>)</li>
                 <li>multiple?: true</li>
-                <li>state: enabled / disabled(default)</li>
-                <li>attributes
-                  <ul>
-                    <li>required: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
-                  </ul>
-                </li>
               </ul>
             </li>
             <li><div data-ur-toggler-component="button" class="inline_code">"head"</div>
               <ul data-ur-toggler-component="content">
                 <li>add this attribute to the table head (i.e. the tag &lt;thead>)</li>
                 <li>multiple?: true</li>
-                <li>state: enabled / disabled(default)</li>
-                <li>attributes
-                  <ul>
-                    <li>required: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on content element</li>
-                  </ul>
-                </li>
               </ul>
             </li>
             <li><div data-ur-toggler-component="button" class="inline_code">"body"</div>
               <ul data-ur-toggler-component="content">
                 <li>add this attribute to the table body (i.e. the tag &lt;tbody>)</li>
                 <li>multiple?: true</li>
-                <li>state: enabled / disabled(default)</li>
-                <li>attributes
-                  <ul>
-                    <li>required: <span class="inline_code">data-ur-tab-id</span> is required and must match attribute on button element</li>
-                  </ul>
-                </li>
               </ul>
             </li>
           </ul>
         </div>
         <h3> class= </h3>
+          <ul>
+            <li><div data-ur-toggler-component="button" class="inline_code">essential</div>
+              <ul data-ur-toggler-component="content">
+                <li>add this attribute to a column header that should be displayed even in small screens</li>
+                <li>multiple?: true</li>
+                <li>attributes
+                  <ul>
+                    <li>optional: <span class="inline_code">persist</span> can be added to ensure the column is always displayed</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><div data-ur-toggler-component="button" class="inline_code">essential</div>
+              <ul data-ur-toggler-component="content">
+                <li>add this attribute to a column header that can be hidden on screen miniturization</li>
+                <li>multiple?: true</li>
+              </ul>
+            </li>
+          </ul>
         <h3>Instance</h3>
         <p class="instance">Each instance is available by set id under <span class="inline_code">Ur.Widgets["tabs"]</span>. Each instance exposes elements property -- raw components of the widget
         </p>
@@ -202,7 +203,7 @@ widget_selected: selected
       <div class="widget_html" data-ur-tabs-component="content" data-ur-tab-id="html">
         <p class="code">
           <span id="brown">&lt;div <span id="green">data-ur-set='flex-table'<span id="brown">><br/>
-          <span id="brown">&emsp;&emsp;&lt;table <span id="green">data-ur-flex-table-component='table' data-ur-tab-id='first' data-ur-state='enabled'<span id="brown">><br/>
+          <span id="brown">&emsp;&emsp;&lt;table <span id="green">data-ur-flex-table-component='table'<span id="brown">><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&lt;thead <span id="green">data-ur-flex-table-component='head'<span id="brown">><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;tr><br/>
           <span id="brown">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;th <span id="green">class='persist essential'<span id="brown">>Company&lt;/th><br/>
