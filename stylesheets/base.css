@@ -582,15 +582,15 @@ body#grouping_page img {
   margin-left: auto;
   margin-right: auto; }
 
-body#who_page [data-ur-set="toggler"] {
+body#more_page [data-ur-set="toggler"] {
   background: none;
   border: none; }
-  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="button"] {
+  body#more_page [data-ur-set="toggler"] [data-ur-toggler-component="button"] {
     width: 250px; }
-  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="content"] {
+  body#more_page [data-ur-set="toggler"] [data-ur-toggler-component="content"] {
     display: none;
     width: 250px; }
-  body#who_page [data-ur-set="toggler"] [data-ur-toggler-component="content"][data-ur-state="enabled"] {
+  body#more_page [data-ur-set="toggler"] [data-ur-toggler-component="content"][data-ur-state="enabled"] {
     display: block; }
 
 body#tabs_page *[data-ur-tabs-component='button'] {
@@ -974,7 +974,7 @@ body#tutorial_page .tutorial_para {
   margin-left: 25px;
 }
 
-body#who_page .bio {
+body#more_page .bio {
   background: #323232;
   padding: 5px;
   margin: 10px;
@@ -982,7 +982,7 @@ body#who_page .bio {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-body#who_page img {
+body#more_page img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -990,7 +990,7 @@ body#who_page img {
   margin-left: auto;
   margin-right: auto;
 }
-body#who_page p {
+body#more_page .bio p {
   color: #C0C0C0;
 }
 
